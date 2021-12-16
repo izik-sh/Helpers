@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email", "Email\Email.csproj", "{FC922450-ABA7-41B7-8C0E-996D2EED941E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailExample", "EmailExample\EmailExample.csproj", "{8230D228-402A-4FA5-9327-E7FC69ACE646}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FC922450-ABA7-41B7-8C0E-996D2EED941E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC922450-ABA7-41B7-8C0E-996D2EED941E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC922450-ABA7-41B7-8C0E-996D2EED941E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
