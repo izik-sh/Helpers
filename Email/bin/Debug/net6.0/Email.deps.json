@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Email/1.0.0": {
+      "EmAIL/1.0.0": {
         "runtime": {
-          "Email.dll": {}
+          "EmAIL.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Email/1.0.0": {
+    "EmAIL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

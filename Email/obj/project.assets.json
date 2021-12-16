@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Helpers.csproj",
-      "projectName": "Helpers",
-      "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Helpers.csproj",
+      "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\EmAIL.csproj",
+      "projectName": "EmAIL",
+      "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\EmAIL.csproj",
       "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\obj\\",
       "projectStyle": "PackageReference",
