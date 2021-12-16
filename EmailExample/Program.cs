@@ -8,5 +8,6 @@ string mailServer = "smtp.gmail.com";
 string emailUserName = "emailUserName";
 string emailPassword = "emailPassword";
 
-bool results = Email.SendEmail(from, to,subject, body,mailServer,emailUserName,emailPassword);
+bool results = Email.SendEmail(from, to, subject, body);
+results = Email.SendEmail(from, to,subject, body,mailServer,emailUserName,emailPassword);
 

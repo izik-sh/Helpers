@@ -1,15 +1,27 @@
-﻿using System.Net;
+﻿using System.Configuration;
+using System.Net;
 using System.Net.Mail;
 
 public class Email
 {
-    public static bool SendEmail(string from, string to, string subject, string body, string server, string emailUserName, string emailPassword)
+    public static bool SendEmail(string from, string to, string subject, string body)
     {
         bool results = false;
+
+        string? server = ConfigurationManager.AppSettings["Server"];
+        string? emailUserName = ConfigurationManager.AppSettings["EmailUserName"];
+        string? emailPassword = ConfigurationManager.AppSettings["EmailPassword"];
+        
+
+        if (string.IsNullOrEmpty(server) || string.IsNullOrEmpty(emailUserName) || string.IsNullOrEmpty(emailPassword))
+        {
+            return results;
+        }
 
         MailMessage message = new MailMessage(from, to);
         message.Subject = subject;
         message.Body = body;
+        message.IsBodyHtml = true;
 
         #region Credentials Version 1
         // If credentials are not necessary use this instead of Credentials Version 2 or 3
@@ -32,7 +44,48 @@ public class Email
         //};
         #endregion
 
+        try
+        {
+            client.Send(message);
+            results = true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
 
+        return results;
+    }
+
+    public static bool SendEmail(string from, string to, string subject, string body, string server, string emailUserName, string emailPassword)
+    {
+        bool results = false;
+
+        MailMessage message = new MailMessage(from, to);
+        message.Subject = subject;
+        message.Body = body;
+        message.IsBodyHtml = true;
+
+        #region Credentials Version 1
+        // If credentials are not necessary use this instead of Credentials Version 2 or 3
+        //client.UseDefaultCredentials = true;
+        #endregion
+
+        #region Credentials Version 2
+        SmtpClient client = new SmtpClient(server);
+        client.Port = 587;
+        client.Credentials = new NetworkCredential(emailUserName, emailPassword);
+        client.EnableSsl = true;
+        #endregion
+
+        #region Credentials Version 3
+        //var smtpClient = new SmtpClient(server)
+        //{
+        //    Port = 587,
+        //    Credentials = new NetworkCredential(emailUserName, emailPassword),
+        //    EnableSsl = true,
+        //};
+        #endregion
 
         try
         {
@@ -41,7 +94,7 @@ public class Email
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Exception caught in CreateTestMessage2(): {0}", ex.ToString());
+            Console.WriteLine(ex.Message);
         }
 
         return results;
