@@ -11,19 +11,19 @@ public class Email
         message.Subject = subject;
         message.Body = body;
 
-        #region Version 1
-        // If credentials are not necessary use this instead of Version 1 or 2
+        #region Credentials Version 1
+        // If credentials are not necessary use this instead of Credentials Version 2 or 3
         //client.UseDefaultCredentials = true;
         #endregion
 
-        #region Version 2
+        #region Credentials Version 2
         SmtpClient client = new SmtpClient(server);
         client.Port = 587;
         client.Credentials = new NetworkCredential(emailUserName, emailPassword);
         client.EnableSsl = true;
         #endregion
 
-        #region Version 3
+        #region Credentials Version 3
         //var smtpClient = new SmtpClient(server)
         //{
         //    Port = 587,
