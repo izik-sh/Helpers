@@ -9,3 +9,4 @@ C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.csproj.CoreCo
 C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.dll
 C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\ref\Email.dll
 C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.pdb
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.csproj.AssemblyReference.cache

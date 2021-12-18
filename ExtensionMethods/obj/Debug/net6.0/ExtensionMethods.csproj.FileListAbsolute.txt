@@ -9,3 +9,4 @@ C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\Extensio
 C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.dll
 C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ref\ExtensionMethods.dll
 C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.pdb
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.csproj.AssemblyReference.cache

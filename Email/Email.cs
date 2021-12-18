@@ -4,6 +4,14 @@ using System.Net.Mail;
 
 public class Email
 {
+    /// <summary>
+    /// SendEmail
+    /// </summary>
+    /// <param name="from"></param>
+    /// <param name="to"></param>
+    /// <param name="subject"></param>
+    /// <param name="body"></param>
+    /// <returns></returns>
     public static bool SendEmail(string from, string to, string subject, string body)
     {
         bool results = false;
@@ -57,6 +65,17 @@ public class Email
         return results;
     }
 
+    /// <summary>
+    /// SendEmail
+    /// </summary>
+    /// <param name="from"></param>
+    /// <param name="to"></param>
+    /// <param name="subject"></param>
+    /// <param name="body"></param>
+    /// <param name="server"></param>
+    /// <param name="emailUserName"></param>
+    /// <param name="emailPassword"></param>
+    /// <returns></returns>
     public static bool SendEmail(string from, string to, string subject, string body, string server, string emailUserName, string emailPassword)
     {
         bool results = false;

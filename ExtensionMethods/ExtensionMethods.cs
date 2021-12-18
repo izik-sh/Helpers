@@ -2,11 +2,22 @@
 
 public static class ExtensionMethods
 {
+    /// <summary>
+    /// RemoveChar
+    /// </summary>
+    /// <param name="str"></param>
+    /// <param name="charToRemove"></param>
+    /// <returns></returns>
     public static string RemoveChar(this String str, string charToRemove)
     {
         return str.Replace(charToRemove, string.Empty);
     }
 
+    /// <summary>
+    /// IsEnglishWord
+    /// </summary>
+    /// <param name="str"></param>
+    /// <returns></returns>
     public static bool IsEnglishWord(this String str)
     {
         bool results = false;
