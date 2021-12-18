@@ -9,15 +9,21 @@ string mailServer = "smtp.gmail.com";
 string emailUserName = "emailUserName";
 string emailPassword = "emailPassword";
 
+#region Demo 1
 bool results = Email.SendEmail(from, to, subject, body);
-results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword);
-Console.WriteLine(results);
+Console.WriteLine("Send mail results: " + results);
+#endregion
+
+#region Demo 2
+results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword); // 
+Console.WriteLine("Send mail results: " + results);
+#endregion
 #endregion
 
 #region ExtensionMethods
-
 #region Demo 1
 string str = "hello world";
+
 str = str.RemoveChar("l");
 Console.WriteLine(str);
 #endregion
@@ -25,9 +31,8 @@ Console.WriteLine(str);
 #region Demo 2
 string strHebrew = "שלום";
 string strEnglish = "hello";
+
 Console.WriteLine("Is strHebrew is english ? " + strHebrew.IsEnglishWord());
 Console.WriteLine("Is strEnglish is english ? " + strEnglish.IsEnglishWord());
 #endregion
-
-
 #endregion
