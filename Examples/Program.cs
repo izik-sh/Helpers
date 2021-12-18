@@ -15,7 +15,7 @@ Console.WriteLine("Send mail results: " + results);
 #endregion
 
 #region Demo 2
-results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword); // 
+results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword); 
 Console.WriteLine("Send mail results: " + results);
 #endregion
 #endregion
