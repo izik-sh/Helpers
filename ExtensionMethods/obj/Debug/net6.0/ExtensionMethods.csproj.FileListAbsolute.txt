@@ -1,0 +1,12 @@
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.csproj.AssemblyReference.cache
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.AssemblyInfoInputs.cache
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.AssemblyInfo.cs
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.csproj.CoreCompileInputs.cache
+C:\Users\General\source\repos\Helpers\ExtensionMethods\bin\Debug\net6.0\ExtensionMethods.deps.json
+C:\Users\General\source\repos\Helpers\ExtensionMethods\bin\Debug\net6.0\ExtensionMethods.dll
+C:\Users\General\source\repos\Helpers\ExtensionMethods\bin\Debug\net6.0\ref\ExtensionMethods.dll
+C:\Users\General\source\repos\Helpers\ExtensionMethods\bin\Debug\net6.0\ExtensionMethods.pdb
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.dll
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ref\ExtensionMethods.dll
+C:\Users\General\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.pdb

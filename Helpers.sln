@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Email", "Email\Email.csproj", "{FC922450-ABA7-41B7-8C0E-996D2EED941E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Email", "Email\Email.csproj", "{FC922450-ABA7-41B7-8C0E-996D2EED941E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailExample", "EmailExample\EmailExample.csproj", "{8230D228-402A-4FA5-9327-E7FC69ACE646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "EmailExample\Examples.csproj", "{8230D228-402A-4FA5-9327-E7FC69ACE646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{A5671410-DBA1-4836-8D17-154FF4EF1CF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8230D228-402A-4FA5-9327-E7FC69ACE646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5671410-DBA1-4836-8D17-154FF4EF1CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5671410-DBA1-4836-8D17-154FF4EF1CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5671410-DBA1-4836-8D17-154FF4EF1CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5671410-DBA1-4836-8D17-154FF4EF1CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

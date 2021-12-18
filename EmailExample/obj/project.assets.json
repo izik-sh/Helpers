@@ -143,6 +143,16 @@
         "runtime": {
           "bin/placeholder/Email.dll": {}
         }
+      },
+      "ExtensionMethods/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ExtensionMethods.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExtensionMethods.dll": {}
+        }
       }
     }
   },
@@ -360,11 +370,17 @@
       "type": "project",
       "path": "../Email/Email.csproj",
       "msbuildProject": "../Email/Email.csproj"
+    },
+    "ExtensionMethods/1.0.0": {
+      "type": "project",
+      "path": "../ExtensionMethods/ExtensionMethods.csproj",
+      "msbuildProject": "../ExtensionMethods/ExtensionMethods.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Email >= 1.0.0"
+      "Email >= 1.0.0",
+      "ExtensionMethods >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -374,9 +390,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\EmailExample\\EmailExample.csproj",
-      "projectName": "EmailExample",
-      "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\EmailExample\\EmailExample.csproj",
+      "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\EmailExample\\Examples.csproj",
+      "projectName": "Examples",
+      "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\EmailExample\\Examples.csproj",
       "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\EmailExample\\obj\\",
       "projectStyle": "PackageReference",
@@ -401,6 +417,9 @@
           "projectReferences": {
             "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj": {
               "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj"
+            },
+            "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
+              "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
             }
           }
         }
