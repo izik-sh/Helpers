@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ULDCZZbH3VoFMk8QaoHs9OGrehj4ILMCRjZDnM0l92r5VS2NcxZuIALD8Y+CRTOyKwxzljvai9NRtFnYPzT/kA==",
+  "dgSpecHash": "141h7FqzdKgsG3LBF3ojWFS3S18iRMmXuRqdDFQAwj34mssYOXzqmhOEz1Ay+FqMXP7e3PXmcWBNvs0jUNw6pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\General\\source\\repos\\Helpers\\EmailExample\\Examples.csproj",
+  "projectFilePath": "C:\\Users\\General\\source\\repos\\Helpers\\Examples\\Examples.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\General\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\General\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",

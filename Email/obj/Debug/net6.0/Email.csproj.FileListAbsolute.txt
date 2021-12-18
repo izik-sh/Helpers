@@ -1,0 +1,11 @@
+C:\Users\General\source\repos\Helpers\Email\bin\Debug\net6.0\Email.deps.json
+C:\Users\General\source\repos\Helpers\Email\bin\Debug\net6.0\Email.dll
+C:\Users\General\source\repos\Helpers\Email\bin\Debug\net6.0\ref\Email.dll
+C:\Users\General\source\repos\Helpers\Email\bin\Debug\net6.0\Email.pdb
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.AssemblyInfoInputs.cache
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.AssemblyInfo.cs
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.csproj.CoreCompileInputs.cache
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.dll
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\ref\Email.dll
+C:\Users\General\source\repos\Helpers\Email\obj\Debug\net6.0\Email.pdb
