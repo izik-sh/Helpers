@@ -10,7 +10,22 @@
       "ProjectGuid": "8230d228-402a-4fa5-9327-e7fc69ace646",
       "DisplayName": "EmailExample",
       "ColorIndex": 1
+    },
+    "d97442c7-f357-469f-97bc-ae71c130e58f": {
+      "ProjectGuid": "d97442c7-f357-469f-97bc-ae71c130e58f",
+      "DisplayName": "Examples",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a5671410-dba1-4836-8d17-154ff4ef1cf7": {
+      "ProjectGuid": "a5671410-dba1-4836-8d17-154ff4ef1cf7",
+      "DisplayName": "ExtensionMethods",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }

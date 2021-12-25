@@ -62,3 +62,6 @@ C:\Users\General\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.dll
 C:\Users\General\source\repos\Helpers\Examples\obj\Debug\net6.0\ref\Examples.dll
 C:\Users\General\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.pdb
 C:\Users\General\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.genruntimeconfig.cache
+C:\Users\General\source\repos\Helpers\Examples\bin\Debug\net6.0\PostJson.dll
+C:\Users\General\source\repos\Helpers\Examples\bin\Debug\net6.0\PostJson.pdb
+C:\Users\General\source\repos\Helpers\Examples\bin\Debug\net6.0\Newtonsoft.Json.dll

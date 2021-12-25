@@ -15,7 +15,7 @@ Console.WriteLine("Send mail results: " + results);
 #endregion
 
 #region Demo 2
-results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword); 
+results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword);
 Console.WriteLine("Send mail results: " + results);
 #endregion
 #endregion
@@ -35,4 +35,11 @@ string strEnglish = "hello";
 Console.WriteLine("Is strHebrew is english ? " + strHebrew.IsEnglishWord());
 Console.WriteLine("Is strEnglish is english ? " + strEnglish.IsEnglishWord());
 #endregion
+#endregion
+
+#region Json
+string url = "https://services.adamtotal.co.il/api/Career/GetArea";
+string json = "{\"user\":\"test\"," +
+                 "\"password\":\"bla\"}";
+results = PostJson.Post(url, json);
 #endregion
