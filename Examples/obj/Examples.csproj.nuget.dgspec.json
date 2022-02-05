@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\General\\source\\repos\\Helpers\\Examples\\Examples.csproj": {}
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj",
         "projectName": "Email",
-        "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\obj\\",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj",
+        "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iziks\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,20 +68,20 @@
         }
       }
     },
-    "C:\\Users\\General\\source\\repos\\Helpers\\Examples\\Examples.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\Examples\\Examples.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj",
         "projectName": "Examples",
-        "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Examples\\Examples.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\Examples\\obj\\",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj",
+        "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iziks\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -96,14 +96,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj": {
-                "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj"
               },
-              "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
-                "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
               },
-              "C:\\Users\\General\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
-                "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\PostJson\\PostJson.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj"
               }
             }
           }
@@ -117,6 +117,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.8.*, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -136,20 +154,20 @@
         }
       }
     },
-    "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj",
         "projectName": "ExtensionMethods",
-        "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\ExtensionMethods\\obj\\",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj",
+        "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iziks\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -194,20 +212,20 @@
         }
       }
     },
-    "C:\\Users\\General\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
         "projectName": "PostJson",
-        "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
-        "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\PostJson\\obj\\",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
+        "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iziks\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

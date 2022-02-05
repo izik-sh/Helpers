@@ -43,3 +43,9 @@ string json = "{\"user\":\"test\"," +
                  "\"password\":\"bla\"}";
 results = PostJson.Post(url, json);
 #endregion
+
+#region WCF Service
+SVC.ServiceClient svc = new SVC.ServiceClient();
+
+svc.GetData(new SVC.GetDataRequest());
+#endregion

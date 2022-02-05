@@ -25,7 +25,17 @@
       "ProjectGuid": "a5671410-dba1-4836-8d17-154ff4ef1cf7",
       "DisplayName": "ExtensionMethods",
       "ColorIndex": 3
+    },
+    "049e88dc-c780-45a6-82fb-4d6f61c3e706": {
+      "ProjectGuid": "049e88dc-c780-45a6-82fb-4d6f61c3e706",
+      "DisplayName": "PostJson",
+      "ColorIndex": 4
+    },
+    "cf00e936-410e-4a74-be39-b4636019a084": {
+      "ProjectGuid": "cf00e936-410e-4a74-be39-b4636019a084",
+      "DisplayName": "WcfService",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

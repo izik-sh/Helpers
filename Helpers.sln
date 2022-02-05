@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Exampl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{334F0C80-E07B-4E09-AE2D-1F14EE50C7D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostJson", "PostJson\PostJson.csproj", "{049E88DC-C780-45A6-82FB-4D6F61C3E706}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostJson", "PostJson\PostJson.csproj", "{049E88DC-C780-45A6-82FB-4D6F61C3E706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{CF00E936-410E-4A74-BE39-B4636019A084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{049E88DC-C780-45A6-82FB-4D6F61C3E706}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{049E88DC-C780-45A6-82FB-4D6F61C3E706}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{049E88DC-C780-45A6-82FB-4D6F61C3E706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF00E936-410E-4A74-BE39-B4636019A084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF00E936-410E-4A74-BE39-B4636019A084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF00E936-410E-4A74-BE39-B4636019A084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF00E936-410E-4A74-BE39-B4636019A084}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

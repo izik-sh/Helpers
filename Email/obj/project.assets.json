@@ -350,23 +350,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\General\\.nuget\\packages\\": {},
+    "C:\\Users\\iziks\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj",
+      "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj",
       "projectName": "Email",
-      "projectPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\Email.csproj",
-      "packagesPath": "C:\\Users\\General\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\General\\source\\repos\\Helpers\\Email\\obj\\",
+      "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj",
+      "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\General\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\iziks\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

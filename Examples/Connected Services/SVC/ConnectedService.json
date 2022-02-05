@@ -1,0 +1,40 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "http://localhost:65346/Service.svc"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "messageContract": true,
+    "namespaceMappings": [
+      "*, SVC"
+    ],
+    "references": [
+      "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\bin\\Debug\\net6.0\\Email.dll",
+      "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\bin\\Debug\\net6.0\\ExtensionMethods.dll",
+      "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\bin\\Debug\\net6.0\\PostJson.dll",
+      "Microsoft.Win32.SystemEvents, {Microsoft.Win32.SystemEvents, 6.0.0}",
+      "Newtonsoft.Json, {Newtonsoft.Json, 13.0.1}",
+      "System.Configuration.ConfigurationManager, {System.Configuration.ConfigurationManager, 6.0.0}",
+      "System.Drawing.Common, {System.Drawing.Common, 6.0.0}",
+      "System.Reflection.DispatchProxy, {System.Reflection.DispatchProxy, 4.7.1}",
+      "System.Security.AccessControl, {System.Security.AccessControl, 6.0.0}",
+      "System.Security.Cryptography.ProtectedData, {System.Security.Cryptography.ProtectedData, 6.0.0}",
+      "System.Security.Cryptography.Xml, {System.Security.Cryptography.Xml, 4.7.0}",
+      "System.Security.Permissions, {System.Security.Permissions, 6.0.0}",
+      "System.Security.Principal.Windows, {System.Security.Principal.Windows, 4.7.0}",
+      "System.ServiceModel, {System.ServiceModel.Primitives, 4.8.1}",
+      "System.ServiceModel.Duplex, {System.ServiceModel.Duplex, 4.8.1}",
+      "System.ServiceModel.Http, {System.ServiceModel.Http, 4.8.1}",
+      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 4.8.1}",
+      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 4.8.1}",
+      "System.ServiceModel.Security, {System.ServiceModel.Security, 4.8.1}",
+      "System.Windows.Extensions, {System.Windows.Extensions, 6.0.0}"
+    ],
+    "sync": true,
+    "targetFramework": "net6.0",
+    "typeReuseMode": "All"
+  }
+}
