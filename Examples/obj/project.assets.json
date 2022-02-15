@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "CefSharp.WinForms/97.1.61": {
+        "type": "package",
+        "compile": {
+          "lib/net452/CefSharp.WinForms.dll": {}
+        },
+        "runtime": {
+          "lib/net452/CefSharp.WinForms.dll": {}
+        }
+      },
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
@@ -343,6 +352,45 @@
     }
   },
   "libraries": {
+    "CefSharp.WinForms/97.1.61": {
+      "sha512": "VHVmq4+94BNJ7B2+vo+rXMk3Eh+pQZEcFuZ/w7jQJIs++ieUBDrY1v3h9RHtH4A5LjjVmZIpYeUlExF+BosPcA==",
+      "type": "package",
+      "path": "cefsharp.winforms/97.1.61",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.txt",
+        "cefsharp.winforms.97.1.61.nupkg.sha512",
+        "cefsharp.winforms.nuspec",
+        "lib/net452/CefSharp.WinForms.XML",
+        "lib/net452/CefSharp.WinForms.dll",
+        "lib/net452/CefSharp.WinForms.pdb",
+        "lib/net462/CefSharp.WinForms.XML",
+        "lib/net462/CefSharp.WinForms.dll",
+        "lib/net462/CefSharp.WinForms.pdb",
+        "src/CefSharp.WinForms/CefSettings.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowserDesigner.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumRenderWidgetHandleFinder.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumWidgetNativeWindow.cs",
+        "src/CefSharp.WinForms/Handler/DisplayHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandlerBuilder.cs",
+        "src/CefSharp.WinForms/Handler/LoadHandler.cs",
+        "src/CefSharp.WinForms/Handler/PopupCreation.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControl.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControlBase.cs",
+        "src/CefSharp.WinForms/IWinFormsWebBrowser.cs",
+        "src/CefSharp.WinForms/Internals/ControlExtensions.cs",
+        "src/CefSharp.WinForms/Internals/DefaultFocusHandler.cs",
+        "src/CefSharp.WinForms/Internals/NativeMethods.cs",
+        "src/CefSharp.WinForms/Internals/ParentFormMessageInterceptor.cs",
+        "src/CefSharp.WinForms/Properties/AssemblyInfo.cs",
+        "src/CefSharp.WinForms/WebBrowserExtensions.cs",
+        "src/CefSharp.WinForms/obj/Release/net452/.NETFramework,Version=v4.5.2.AssemblyAttributes.cs",
+        "src/CefSharp.WinForms/obj/Release/net462/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
+      ]
+    },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "type": "package",
@@ -1157,6 +1205,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CefSharp.WinForms >= 97.1.61",
       "Email >= 1.0.0",
       "ExtensionMethods >= 1.0.0",
       "PostJson >= 1.0.0",
@@ -1220,6 +1269,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "CefSharp.WinForms": {
+            "target": "Package",
+            "version": "[97.1.61, )"
+          },
           "System.ServiceModel.Duplex": {
             "target": "Package",
             "version": "[4.8.*, )"
@@ -1255,5 +1308,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CefSharp.WinForms 97.1.61' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CefSharp.WinForms",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

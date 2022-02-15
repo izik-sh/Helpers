@@ -35,7 +35,17 @@
       "ProjectGuid": "cf00e936-410e-4a74-be39-b4636019a084",
       "DisplayName": "WcfService",
       "ColorIndex": 5
+    },
+    "831bb6f1-aaaa-41f0-aa24-37503b823991": {
+      "ProjectGuid": "831bb6f1-aaaa-41f0-aa24-37503b823991",
+      "DisplayName": "ChromiumWebBrowser",
+      "ColorIndex": 6
+    },
+    "19471f45-c026-4331-9dcb-db0a850a7e43": {
+      "ProjectGuid": "19471f45-c026-4331-9dcb-db0a850a7e43",
+      "DisplayName": "WindowsWebBrowser",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 8
 }
