@@ -45,7 +45,17 @@
       "ProjectGuid": "19471f45-c026-4331-9dcb-db0a850a7e43",
       "DisplayName": "WindowsWebBrowser",
       "ColorIndex": 7
+    },
+    "36d0447b-2639-4214-adee-49faed4756fa": {
+      "ProjectGuid": "36d0447b-2639-4214-adee-49faed4756fa",
+      "DisplayName": "WindowsService",
+      "ColorIndex": 8
+    },
+    "bfe1c9cc-609d-47a6-92e8-236b002ed0fd": {
+      "ProjectGuid": "bfe1c9cc-609d-47a6-92e8-236b002ed0fd",
+      "DisplayName": "WindowsService",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 10
 }
