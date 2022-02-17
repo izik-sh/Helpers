@@ -1,4 +1,3 @@
-
 using WebBrowser;
 
 internal static class Program
