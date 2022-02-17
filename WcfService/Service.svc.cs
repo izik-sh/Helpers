@@ -23,8 +23,7 @@ namespace WcfService
             process.StartInfo = startInfo;
             process.Start();
 
-            return string.Format("You entered: {0}", value);
-            
+            return string.Format("You entered: {0}", value);           
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
