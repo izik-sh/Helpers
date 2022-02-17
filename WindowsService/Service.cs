@@ -29,7 +29,6 @@ namespace WindowsService
         {
             timeToShutDown = ConfigurationManager.AppSettings["TimeToShutDown"];
             timerIntervalInSeconds = Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000;
-
         }
 
         protected override void OnStart(string[] args)
