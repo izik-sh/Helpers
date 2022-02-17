@@ -20,7 +20,6 @@ public class Email
         string? emailUserName = ConfigurationManager.AppSettings["EmailUserName"];
         string? emailPassword = ConfigurationManager.AppSettings["EmailPassword"];
         
-
         if (string.IsNullOrEmpty(server) || string.IsNullOrEmpty(emailUserName) || string.IsNullOrEmpty(emailPassword))
         {
             return results;

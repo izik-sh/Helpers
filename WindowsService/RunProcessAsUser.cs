@@ -236,7 +236,7 @@ namespace WindowsService
             //In this case assuming there is only one explorer.exe
 
             Process[] ps = Process.GetProcessesByName("explorer");
-            int processId = -1;//=processId
+            int processId = -1; //=processId
             if (ps.Length > 0)
             {
                 processId = ps[0].Id;
