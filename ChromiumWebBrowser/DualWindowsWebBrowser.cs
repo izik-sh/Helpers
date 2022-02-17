@@ -17,8 +17,6 @@ namespace WebBrowserDual
         ChromiumWebBrowser chromeBrowser1;
         ChromiumWebBrowser chromeBrowser2;
 
-
-
         public DualWindowsWebBrowser()
         {
             InitializeComponent();
@@ -57,20 +55,19 @@ namespace WebBrowserDual
 
         private void txtUrlForPanel1_Leave(object sender, EventArgs e)
         {
-            ChangeUrl(sender,chromeBrowser1);
+            ChangeUrl(sender, chromeBrowser1);
         }
 
-        private void ChangeUrl(object sender,object target)
+        private void ChangeUrl(object sender, object target)
         {
             TextBox tb = (TextBox)sender;
             ChromiumWebBrowser cwb = (ChromiumWebBrowser)target;
             cwb.LoadUrl(tb.Text);
-       }
+        }
 
         private void txtUrlForPanel2_Leave(object sender, EventArgs e)
         {
-            ChangeUrl(sender,chromeBrowser2);
-
+            ChangeUrl(sender, chromeBrowser2);
         }
 
         private void splitContainer_ClientSizeChanged(object sender, EventArgs e)
@@ -81,19 +78,16 @@ namespace WebBrowserDual
         private void label2_SizeChanged(object sender, EventArgs e)
         {
             txtUrlForPanel2.Left = splitContainer.Panel2.Left;
-
         }
 
         private void txtUrlForPanel2_ClientSizeChanged(object sender, EventArgs e)
         {
             txtUrlForPanel2.Left = splitContainer.Panel2.Left;
-
         }
 
         private void splitContainer_Panel2_ClientSizeChanged(object sender, EventArgs e)
         {
             txtUrlForPanel2.Left = splitContainer.Panel2.Left;
-
         }
     }
 }
