@@ -25,7 +25,6 @@ namespace WindowsService
         public bool bInheritHandle;
     }
 
-
     [StructLayout(LayoutKind.Sequential)]
     public struct STARTUPINFO
     {
@@ -47,7 +46,6 @@ namespace WindowsService
         public IntPtr hStdInput;
         public IntPtr hStdOutput;
         public IntPtr hStdError;
-
     }
 
     internal enum SECURITY_IMPERSONATION_LEVEL
@@ -80,7 +78,6 @@ namespace WindowsService
             ref STARTUPINFO lpStartupInfo,
             out PROCESS_INFORMATION lpProcessInformation);
 
-
         [DllImport("advapi32.dll", EntryPoint = "DuplicateTokenEx", SetLastError = true)]
         private static extern bool DuplicateTokenEx(
             IntPtr hExistingToken,
@@ -89,7 +86,6 @@ namespace WindowsService
             Int32 ImpersonationLevel,
             Int32 dwTokenType,
             ref IntPtr phNewToken);
-
 
         [DllImport("advapi32.dll", SetLastError = true)]
         private static extern bool OpenProcessToken(
@@ -102,7 +98,6 @@ namespace WindowsService
                 ref IntPtr lpEnvironment,
                 IntPtr hToken,
                 bool bInherit);
-
 
         [DllImport("userenv.dll", SetLastError = true)]
         private static extern bool DestroyEnvironmentBlock(
@@ -134,7 +129,6 @@ namespace WindowsService
             STARTUPINFO si = new STARTUPINFO();
             si.cb = (uint)Marshal.SizeOf(si);
 
-
             //if this member is NULL, the new process inherits the desktop
             //and window station of its parent process. If this member is
             //an empty string, the process does not inherit the desktop and
@@ -161,7 +155,6 @@ namespace WindowsService
                 ref si,
                 out pi);
 
-
             if (result == false)
             {
                 int error = Marshal.GetLastWin32Error();
@@ -169,7 +162,6 @@ namespace WindowsService
             }
             return result;
         }
-
 
         private static IntPtr GetPrimaryToken(int processId)
         {
@@ -187,7 +179,6 @@ namespace WindowsService
                 string details = String.Format("ProcessID {0} Not Available", processId);
                 throw;
             }
-
 
             //Gets impersonation token
             retVal = OpenProcessToken(p.Handle, TOKEN_DUPLICATE, ref token);
@@ -212,7 +203,6 @@ namespace WindowsService
                     string message = String.Format("DuplicateTokenEx Error: {0}", Marshal.GetLastWin32Error());
                 }
             }
-
             else
             {
                 string message = String.Format("OpenProcessToken Error: {0}", Marshal.GetLastWin32Error());
