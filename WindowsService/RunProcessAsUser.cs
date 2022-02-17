@@ -66,7 +66,6 @@ namespace WindowsService
 
     public static class ProcessAsUser
     {
-
         [DllImport("advapi32.dll", SetLastError = true)]
         private static extern bool CreateProcessAsUser(
             IntPtr hToken,
@@ -122,11 +121,9 @@ namespace WindowsService
         private const int STARTF_FORCEONFEEDBACK = 0x00000040;
         private const uint CREATE_UNICODE_ENVIRONMENT = 0x00000400;
 
-
         private static bool LaunchProcessAsUser(string cmdLine, IntPtr token, IntPtr envBlock)
         {
             bool result = false;
-
 
             PROCESS_INFORMATION pi = new PROCESS_INFORMATION();
             SECURITY_ATTRIBUTES saProcess = new SECURITY_ATTRIBUTES();
@@ -169,9 +166,7 @@ namespace WindowsService
             {
                 int error = Marshal.GetLastWin32Error();
                 string message = String.Format("CreateProcessAsUser Error: {0}", error);
-
             }
-
             return result;
         }
 
@@ -187,10 +182,8 @@ namespace WindowsService
             {
                 p = Process.GetProcessById(processId);
             }
-
             catch (ArgumentException)
             {
-
                 string details = String.Format("ProcessID {0} Not Available", processId);
                 throw;
             }
@@ -200,7 +193,6 @@ namespace WindowsService
             retVal = OpenProcessToken(p.Handle, TOKEN_DUPLICATE, ref token);
             if (retVal == true)
             {
-
                 SECURITY_ATTRIBUTES sa = new SECURITY_ATTRIBUTES();
                 sa.nLength = (uint)Marshal.SizeOf(sa);
 
@@ -218,9 +210,7 @@ namespace WindowsService
                 if (retVal == false)
                 {
                     string message = String.Format("DuplicateTokenEx Error: {0}", Marshal.GetLastWin32Error());
-
                 }
-
             }
 
             else
@@ -230,30 +220,25 @@ namespace WindowsService
 
             //We'll Close this token after it is used.
             return primaryToken;
-
         }
 
         private static IntPtr GetEnvironmentBlock(IntPtr token)
         {
-
             IntPtr envBlock = IntPtr.Zero;
             bool retVal = CreateEnvironmentBlock(ref envBlock, token, false);
             if (retVal == false)
             {
-
                 //Environment Block, things like common paths to My Documents etc.
                 //Will not be created if "false"
                 //It should not adversley affect CreateProcessAsUser.
 
                 string message = String.Format("CreateEnvironmentBlock Error: {0}", Marshal.GetLastWin32Error());
-
             }
             return envBlock;
         }
 
         public static bool Launch(string appCmdLine /*,int processId*/)
         {
-
             bool ret = false;
 
             //Either specify the processID explicitly
@@ -273,7 +258,6 @@ namespace WindowsService
 
                 if (token != IntPtr.Zero)
                 {
-
                     IntPtr envBlock = GetEnvironmentBlock(token);
                     ret = LaunchProcessAsUser(appCmdLine, token, envBlock);
                     if (envBlock != IntPtr.Zero)
@@ -281,10 +265,8 @@ namespace WindowsService
 
                     CloseHandle(token);
                 }
-
             }
             return ret;
         }
-
     }
 }
