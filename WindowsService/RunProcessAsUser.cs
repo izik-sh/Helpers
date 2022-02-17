@@ -225,9 +225,7 @@ namespace WindowsService
 
             else
             {
-
                 string message = String.Format("OpenProcessToken Error: {0}", Marshal.GetLastWin32Error());
-
             }
 
             //We'll Close this token after it is used.
