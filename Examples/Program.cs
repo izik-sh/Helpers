@@ -49,5 +49,3 @@ SVC.ServiceClient svc = new SVC.ServiceClient();
 
 svc.GetData(new SVC.GetDataRequest());
 #endregion
-
-string password = "1234";
