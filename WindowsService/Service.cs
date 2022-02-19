@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using System.Diagnostics;
 using System.ServiceProcess;
 using System.Timers;
 
@@ -26,6 +27,8 @@ namespace WindowsService
 
         protected override void OnStart(string[] args)
         {
+            EventLog.WriteEntry("Shut down service is started");
+
             System.Timers.Timer T1 = new System.Timers.Timer();
             T1.Interval = (timerIntervalInSeconds);
             T1.AutoReset = true;
@@ -48,6 +51,7 @@ namespace WindowsService
 
         protected override void OnStop()
         {
+            EventLog.WriteEntry("Shut down service is ended");
         }
     }
 }

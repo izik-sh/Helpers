@@ -39,7 +39,8 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.ServiceName = "IzikShudDown";
+            this.serviceInstaller1.Description = "Shut down pc";
+            this.serviceInstaller1.ServiceName = "SDPC";
             // 
             // ProjectInstaller
             // 
