@@ -38,10 +38,12 @@ Console.WriteLine("Is strEnglish is english ? " + strEnglish.IsEnglishWord());
 #endregion
 
 #region Json
-string url = "https://services.adamtotal.co.il/api/Career/GetArea";
+string url = "https://jsonplaceholder.typicode.com/todos/1";
 string json = "{\"user\":\"test\"," +
                  "\"password\":\"bla\"}";
 results = PostJson.Post(url, json);
+
+Task task = PostJson.PostAsHttpClient(url, json);
 #endregion
 
 #region WCF Service
