@@ -11,14 +11,14 @@ public class PostJson
     /// <param name="url"></param>
     /// <param name="json"></param>
     /// <returns></returns>
-    public static bool Post(string url, string json)
+    public static bool Post(string url, string json,string contentType = "application/json")
     {
         bool results = false;
 
         try
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
-            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.ContentType = contentType;
             httpWebRequest.Method = "POST";
 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))

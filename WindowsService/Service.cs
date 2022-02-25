@@ -11,6 +11,7 @@ namespace WindowsService
         #region Params
         string timeToShutDown = "21:00:00";
         int timerIntervalInSeconds = 60000;
+        string daysToSkip = DayOfWeek.Friday.ToString();
         #endregion
 
         public Service()
@@ -21,8 +22,9 @@ namespace WindowsService
 
         private void Init()
         {
-            timeToShutDown = ConfigurationManager.AppSettings["TimeToShutDown"];
-            timerIntervalInSeconds = Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000;
+            timeToShutDown = ConfigurationManager.AppSettings["TimeToShutDown"] != null ? ConfigurationManager.AppSettings["TimeToShutDown"] : timeToShutDown;
+            timerIntervalInSeconds = ConfigurationManager.AppSettings["TimerIntervalInSeconds"] != null ? Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000 : timerIntervalInSeconds;
+            daysToSkip = ConfigurationManager.AppSettings["DaysToSkip"] != null ? ConfigurationManager.AppSettings["DaysToSkip"] : daysToSkip;
         }
 
         protected override void OnStart(string[] args)
@@ -43,7 +45,7 @@ namespace WindowsService
 
             int results = TimeSpan.Compare(DateTime.Now.TimeOfDay, new TimeSpan(Convert.ToInt32(time[0]), Convert.ToInt32(time[1]), Convert.ToInt32(time[2])));
 
-            if (results == 1)
+            if (results == 1 && !DateTime.Now.DayOfWeek.ToString().ToLower().Contains(daysToSkip.ToLower()))
             {
                 ComputerShutDown.ShutDown();
             }

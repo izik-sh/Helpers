@@ -55,7 +55,12 @@
       "ProjectGuid": "bfe1c9cc-609d-47a6-92e8-236b002ed0fd",
       "DisplayName": "WindowsService",
       "ColorIndex": 9
+    },
+    "867d227e-5602-4d1a-927f-a2761abfd9a3": {
+      "ProjectGuid": "867d227e-5602-4d1a-927f-a2761abfd9a3",
+      "DisplayName": "WebApi",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }

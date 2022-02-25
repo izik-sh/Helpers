@@ -44,6 +44,7 @@ string json = "{\"user\":\"test\"," +
 results = PostJson.Post(url, json);
 
 Task task = PostJson.PostAsHttpClient(url, json);
+
 #endregion
 
 #region WCF Service
