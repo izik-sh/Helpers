@@ -24,7 +24,7 @@ namespace WindowsService
         {
             timeToShutDown = ConfigurationManager.AppSettings["TimeToShutDown"] != null ? ConfigurationManager.AppSettings["TimeToShutDown"] : timeToShutDown;
             timerIntervalInSeconds = ConfigurationManager.AppSettings["TimerIntervalInSeconds"] != null ? Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000 : timerIntervalInSeconds;
-            daysToSkip = ConfigurationManager.AppSettings["DaysToSkip"] != null ? ConfigurationManager.AppSettings["DaysToSkip"] : daysToSkip;
+            daysToSkip = ConfigurationManager.AppSettings["DaysToSkip"] ?? daysToSkip;
         }
 
         protected override void OnStart(string[] args)
