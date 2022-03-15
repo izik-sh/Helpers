@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Management;
 using System.ServiceProcess;
+using System.Text;
 using System.Threading;
 using System.Timers;
 using System.Windows;
@@ -31,7 +32,7 @@ namespace WindowsService
             timerIntervalInSeconds = ConfigurationManager.AppSettings["TimerIntervalInSeconds"] != null ? Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000 : timerIntervalInSeconds;
             daysToSkip = ConfigurationManager.AppSettings["DaysToSkip"] ?? daysToSkip;
 
-            ManagementObjectSearcher moSearcher = new  ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
+            ManagementObjectSearcher moSearcher = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
 
             foreach (ManagementObject wmi_HD in moSearcher.Get())
             {
@@ -42,7 +43,7 @@ namespace WindowsService
                 hd.Type = wmi_HD["InterfaceType"].ToString();  //Interface Type
                 hd.SerialNo = wmi_HD["SerialNumber"].ToString(); //Serial Number
                 hardDriveDetails.Add(hd);
-       
+
             }
         }
 
@@ -51,7 +52,7 @@ namespace WindowsService
             EventLog.WriteEntry("Shut down service is started");
 
             System.Timers.Timer T1 = new System.Timers.Timer();
-            T1.Interval = (timerIntervalInSeconds);
+            T1.Interval = timerIntervalInSeconds;
             T1.AutoReset = true;
             T1.Enabled = true;
             T1.Start();
@@ -77,10 +78,18 @@ namespace WindowsService
                     startTime = times[0].Split(':');
                     endTime = times[1].Split(':');
                     daysToSkip = dt.Rows[0]["entity_value"].ToString();
-                    alertMessage = dt.Rows[0]["message"].ToString();
+                    alertMessage = !string.IsNullOrEmpty(dt.Rows[0]["message"].ToString()) ? dt.Rows[0]["message"].ToString() : alertMessage;
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Message: " + ex.Message + Environment.NewLine);
+                sb.Append("StackTrace: " + ex.StackTrace + Environment.NewLine);
+                sb.Append("Source: " + ex.Source + Environment.NewLine);
+
+                WriteEventLog(sb.ToString());
+            }
 
             int startResults = TimeSpan.Compare(DateTime.Now.TimeOfDay, new TimeSpan(Convert.ToInt32(startTime[0]), Convert.ToInt32(startTime[1]), Convert.ToInt32(startTime[2])));
             int endResults = TimeSpan.Compare(new TimeSpan(Convert.ToInt32(endTime[0]), Convert.ToInt32(endTime[1]), Convert.ToInt32(endTime[2])), DateTime.Now.TimeOfDay);
@@ -90,22 +99,27 @@ namespace WindowsService
             {
                 int leftTime = Math.Abs(Convert.ToInt32(startTime[1]) - DateTime.Now.Minute);
                 alertMessage = string.Format(dt.Rows[0]["message"].ToString(), leftTime);
-               
-                if (!EventLog.SourceExists(this.ServiceName))
-                {
-                    EventLog.CreateEventSource("Application", this.ServiceName);
-                }
 
-                using (EventLog eventLog = new EventLog("Application"))
-                {
-                    eventLog.Source = this.ServiceName;
-                    eventLog.WriteEntry(alertMessage, EventLogEntryType.Information);
-                }
+                WriteEventLog(alertMessage, EventLogEntryType.Information);
             }
 
             if (startResults == 1 && endResults == 1 && !daysToSkip.ToLower().Contains(DateTime.Now.DayOfWeek.ToString().ToLower()))
             {
                 ComputerShutDown.ShutDown();
+            }
+        }
+
+        private void WriteEventLog(string alertMessage, EventLogEntryType eventLogEntryType = EventLogEntryType.Error)
+        {
+            if (!EventLog.SourceExists(this.ServiceName))
+            {
+                EventLog.CreateEventSource("Application", this.ServiceName);
+            }
+
+            using (EventLog eventLog = new EventLog("Application"))
+            {
+                eventLog.Source = this.ServiceName;
+                eventLog.WriteEntry(alertMessage, eventLogEntryType);
             }
         }
 
