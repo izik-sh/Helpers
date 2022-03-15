@@ -45,7 +45,7 @@
             this.txtUrlForPanel1.Name = "txtUrlForPanel1";
             this.txtUrlForPanel1.Size = new System.Drawing.Size(390, 31);
             this.txtUrlForPanel1.TabIndex = 1;
-            this.txtUrlForPanel1.Leave += new System.EventHandler(this.txtUrlForPanel1_Leave);
+            this.txtUrlForPanel1.Leave += new System.EventHandler(this.TxtUrlForPanel1_Leave);
             // 
             // txtUrlForPanel2
             // 
@@ -53,8 +53,8 @@
             this.txtUrlForPanel2.Name = "txtUrlForPanel2";
             this.txtUrlForPanel2.Size = new System.Drawing.Size(390, 31);
             this.txtUrlForPanel2.TabIndex = 1;
-            this.txtUrlForPanel2.ClientSizeChanged += new System.EventHandler(this.txtUrlForPanel2_ClientSizeChanged);
-            this.txtUrlForPanel2.Leave += new System.EventHandler(this.txtUrlForPanel2_Leave);
+            this.txtUrlForPanel2.ClientSizeChanged += new System.EventHandler(this.TxtUrlForPanel2_ClientSizeChanged);
+            this.txtUrlForPanel2.Leave += new System.EventHandler(this.TxtUrlForPanel2_Leave);
             // 
             // label1
             // 
@@ -73,7 +73,7 @@
             this.label2.Size = new System.Drawing.Size(127, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Right Panel Url";
-            this.label2.SizeChanged += new System.EventHandler(this.label2_SizeChanged);
+            this.label2.SizeChanged += new System.EventHandler(this.Label2_SizeChanged);
             // 
             // webPanel
             // 
@@ -97,11 +97,11 @@
             // 
             // splitContainer.Panel2
             // 
-            this.splitContainer.Panel2.ClientSizeChanged += new System.EventHandler(this.splitContainer_Panel2_ClientSizeChanged);
+            this.splitContainer.Panel2.ClientSizeChanged += new System.EventHandler(this.SplitContainer_Panel2_ClientSizeChanged);
             this.splitContainer.Size = new System.Drawing.Size(775, 358);
             this.splitContainer.SplitterDistance = 256;
             this.splitContainer.TabIndex = 0;
-            this.splitContainer.ClientSizeChanged += new System.EventHandler(this.splitContainer_ClientSizeChanged);
+            this.splitContainer.ClientSizeChanged += new System.EventHandler(this.SplitContainer_ClientSizeChanged);
             // 
             // WindowsWebBrowser
             // 

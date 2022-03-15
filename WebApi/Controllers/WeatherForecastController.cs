@@ -33,8 +33,28 @@ namespace WebApi.Controllers
             .ToArray();
         }
 
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+        //{
+        //    var todoItem = await _context.TodoItems.FindAsync(id);
+
+        //    if (todoItem == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return todoItem;
+        //}
+
         //[HttpPost]
         //public string SET()
         //{ return "1"; }
+
+        //[HttpPost]
+        //public string GetAllCities()
+        //{
+        //    return "haifa";
+        //}
+
     }
 }

@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{D97442C7-F357-469F-97BC-AE71C130E58F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{334F0C80-E07B-4E09-AE2D-1F14EE50C7D2}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostJson", "PostJson\PostJson.csproj", "{049E88DC-C780-45A6-82FB-4D6F61C3E706}"
 EndProject
@@ -19,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsWebBrowser", "Chromi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService", "WindowsService\WindowsService.csproj", "{BFE1C9CC-609D-47A6-92E8-236B002ED0FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{867D227E-5602-4D1A-927F-A2761ABFD9A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{867D227E-5602-4D1A-927F-A2761ABFD9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{A653C65C-EB3A-4326-B9E6-CF21FAB5302B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +64,10 @@ Global
 		{867D227E-5602-4D1A-927F-A2761ABFD9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{867D227E-5602-4D1A-927F-A2761ABFD9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{867D227E-5602-4D1A-927F-A2761ABFD9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A653C65C-EB3A-4326-B9E6-CF21FAB5302B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A653C65C-EB3A-4326-B9E6-CF21FAB5302B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A653C65C-EB3A-4326-B9E6-CF21FAB5302B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A653C65C-EB3A-4326-B9E6-CF21FAB5302B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

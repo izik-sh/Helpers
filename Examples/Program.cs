@@ -42,8 +42,10 @@ string url = "https://jsonplaceholder.typicode.com/todos/1";
 string json = "{\"user\":\"test\"," +
                  "\"password\":\"bla\"}";
 results = PostJson.Post(url, json);
+Console.WriteLine(results.ToString());
 
 Task task = PostJson.PostAsHttpClient(url, json);
+Console.WriteLine(task.Status.ToString());
 
 #endregion
 

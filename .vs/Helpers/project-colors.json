@@ -60,7 +60,12 @@
       "ProjectGuid": "867d227e-5602-4d1a-927f-a2761abfd9a3",
       "DisplayName": "WebApi",
       "ColorIndex": 10
+    },
+    "a653c65c-eb3a-4326-b9e6-cf21fab5302b": {
+      "ProjectGuid": "a653c65c-eb3a-4326-b9e6-cf21fab5302b",
+      "DisplayName": "Encryption",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 12
 }

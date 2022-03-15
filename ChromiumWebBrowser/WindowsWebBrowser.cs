@@ -14,8 +14,8 @@ namespace WebBrowser
 {
     public partial class WindowsWebBrowser : Form
     {
-        ChromiumWebBrowser chromeBrowser1;
-        ChromiumWebBrowser chromeBrowser2;
+        readonly ChromiumWebBrowser chromeBrowser1;
+        readonly ChromiumWebBrowser chromeBrowser2;
 
         public WindowsWebBrowser()
         {
@@ -53,7 +53,7 @@ namespace WebBrowser
             chromeBrowser2.Dock = DockStyle.Fill;
         }
 
-        private void txtUrlForPanel1_Leave(object sender, EventArgs e)
+        private void TxtUrlForPanel1_Leave(object sender, EventArgs e)
         {
             ChangeUrl(sender, chromeBrowser1);
         }
@@ -65,27 +65,27 @@ namespace WebBrowser
             cwb.LoadUrl(tb.Text);
         }
 
-        private void txtUrlForPanel2_Leave(object sender, EventArgs e)
+        private void TxtUrlForPanel2_Leave(object sender, EventArgs e)
         {
             ChangeUrl(sender, chromeBrowser2);
         }
 
-        private void splitContainer_ClientSizeChanged(object sender, EventArgs e)
+        private void SplitContainer_ClientSizeChanged(object sender, EventArgs e)
         {
             //txtUrlForPanel2.Left = splitContainer.Panel2.Left;
         }
 
-        private void label2_SizeChanged(object sender, EventArgs e)
+        private void Label2_SizeChanged(object sender, EventArgs e)
         {
             // txtUrlForPanel2.Left = splitContainer.Panel2.Left;
         }
 
-        private void txtUrlForPanel2_ClientSizeChanged(object sender, EventArgs e)
+        private void TxtUrlForPanel2_ClientSizeChanged(object sender, EventArgs e)
         {
             //txtUrlForPanel2.Left = splitContainer.Panel2.Left;
         }
 
-        private void splitContainer_Panel2_ClientSizeChanged(object sender, EventArgs e)
+        private void SplitContainer_Panel2_ClientSizeChanged(object sender, EventArgs e)
         {
             //txtUrlForPanel2.Left = splitContainer.Panel2.Left;
         }

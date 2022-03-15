@@ -29,6 +29,7 @@ public static class ExtensionMethods
         }
         catch (Exception ex)
         {
+            Console.WriteLine(ex.Message);
             // Throw Error messgae if needed
         }
         return results;

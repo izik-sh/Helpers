@@ -114,8 +114,6 @@ namespace WindowsService
 
         private static bool LaunchProcessAsUser(string cmdLine, IntPtr token, IntPtr envBlock)
         {
-            bool result = false;
-
             PROCESS_INFORMATION pi = new PROCESS_INFORMATION();
             SECURITY_ATTRIBUTES saProcess = new SECURITY_ATTRIBUTES();
             SECURITY_ATTRIBUTES saThread = new SECURITY_ATTRIBUTES();
@@ -138,7 +136,7 @@ namespace WindowsService
             si.wShowWindow = SW_SHOW;
             //Set other si properties as required.
 
-            result = CreateProcessAsUser(
+            bool result = CreateProcessAsUser(
                 token,
                 null,
                 cmdLine,
@@ -149,13 +147,13 @@ namespace WindowsService
                 envBlock,
                 null,
                 ref si,
-                out pi);
-
+                out _);
             if (result == false)
             {
                 int error = Marshal.GetLastWin32Error();
-                string message = String.Format("CreateProcessAsUser Error: {0}", error);
+                Console.WriteLine(String.Format("CreateProcessAsUser Error: {0}", error));
             }
+            Console.WriteLine(pi.dwProcessId.ToString() + " | " +pi.ToString());
             return result;
         }
 
