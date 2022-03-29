@@ -47,6 +47,11 @@ Console.WriteLine(results.ToString());
 Task task = PostJson.PostAsHttpClient(url, json);
 Console.WriteLine(task.Status.ToString());
 
+json = "{\"user\":\"test\"," +
+                 "\"שם משתמש\":\"bla\"}";
+results = PostJson.Post(url, json);
+
+
 #endregion
 
 #region WCF Service
