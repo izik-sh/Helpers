@@ -32,3 +32,4 @@ C:\Users\iziks\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionM
 C:\Users\iziks\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.dll
 C:\Users\iziks\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ref\ExtensionMethods.dll
 C:\Users\iziks\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.pdb
+C:\Users\iziks\source\repos\Helpers\ExtensionMethods\obj\Debug\net6.0\ExtensionMethods.csproj.AssemblyReference.cache

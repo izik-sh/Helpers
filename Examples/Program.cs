@@ -1,4 +1,24 @@
 ﻿// See https://aka.ms/new-console-template for more information
+#region ExtensionMethods
+#region Demo 1
+string str = "hello world";
+
+str = str.RemoveChar("l");
+Console.WriteLine(str);
+#endregion
+
+#region Demo 2
+string strHebrew = "שלום";
+string strEnglish = "hello";
+
+Console.WriteLine("Is strHebrew is english ? " + strHebrew.IsEnglishWord());
+Console.WriteLine("Is strEnglish is english ? " + strEnglish.IsEnglishWord());
+#endregion
+
+#region Demo 3
+string formatedDate = DateTime.Now.GetMonthAndYearForamted("MM-yyyy");
+#endregion
+#endregion
 
 #region Email
 string from = "myEmail@gmail.com";
@@ -17,23 +37,6 @@ Console.WriteLine("Send mail results: " + results);
 #region Demo 2
 results = Email.SendEmail(from, to, subject, body, mailServer, emailUserName, emailPassword);
 Console.WriteLine("Send mail results: " + results);
-#endregion
-#endregion
-
-#region ExtensionMethods
-#region Demo 1
-string str = "hello world";
-
-str = str.RemoveChar("l");
-Console.WriteLine(str);
-#endregion
-
-#region Demo 2
-string strHebrew = "שלום";
-string strEnglish = "hello";
-
-Console.WriteLine("Is strHebrew is english ? " + strHebrew.IsEnglishWord());
-Console.WriteLine("Is strEnglish is english ? " + strEnglish.IsEnglishWord());
 #endregion
 #endregion
 

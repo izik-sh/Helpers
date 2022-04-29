@@ -65,7 +65,12 @@
       "ProjectGuid": "a653c65c-eb3a-4326-b9e6-cf21fab5302b",
       "DisplayName": "Encryption",
       "ColorIndex": 11
+    },
+    "68206f1d-39ba-4cb0-938f-477719a3daf0": {
+      "ProjectGuid": "68206f1d-39ba-4cb0-938f-477719a3daf0",
+      "DisplayName": "AspNetApplication",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 13
 }

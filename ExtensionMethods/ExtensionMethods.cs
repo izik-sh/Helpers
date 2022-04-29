@@ -34,4 +34,11 @@ public static class ExtensionMethods
         }
         return results;
     }
+
+    public static string GetMonthAndYearForamted(this DateTime dateTime,string format)
+    {
+        string returnDate = dateTime.ToString(format);
+        return returnDate;
+    }
+       
 }
