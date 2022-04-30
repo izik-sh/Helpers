@@ -74,7 +74,10 @@
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
     </None>
+    <None Include="AppPrivate.config" />
     <None Include="App.config" />
+    <None Include="bin\Debug\AppPrivate.config" />
+    <None Include="bin\Release\AppPrivate.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProjectInstaller.resx">

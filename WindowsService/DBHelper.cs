@@ -12,7 +12,7 @@ namespace WindowsService
 {
     public class DBHelper
     {
-        static string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        static string connectionString = GetConnectionString();
 
         public static DataTable GetDataTable(string query, string[] sqlParameters, object[] sqlParametersValues, bool isStoredProcedure = true)
         {
@@ -55,5 +55,30 @@ namespace WindowsService
             return dt;
         }
 
+        private static string GetConnectionString()
+        {
+            string connection = string.Empty;
+
+            try
+            {
+                ExeConfigurationFileMap configFileMap = new ExeConfigurationFileMap();
+                configFileMap.ExeConfigFilename = "AppPrivate.config"; // AppPrivate.config should be present in root directory from where application exe is kicked off
+
+                // Get the mapped configuration file
+                var config = ConfigurationManager.OpenMappedExeConfiguration(
+                       configFileMap, ConfigurationUserLevel.None);
+
+                //get the relevant section from the config object
+                ConnectionStringsSection connectionSection = (ConnectionStringsSection)config.GetSection("connectionStrings");
+
+                //get value
+                connection = connectionSection.ConnectionStrings["ConnectionString"].ConnectionString;
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            return connection;
+        }
     }
 }
