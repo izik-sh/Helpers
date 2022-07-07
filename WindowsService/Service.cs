@@ -18,6 +18,7 @@ namespace WindowsService
         string timeToShutDown = "21:00:00";
         int timerIntervalInSeconds = 60000;
         string daysToSkip = DayOfWeek.Friday.ToString();
+        string HDUniqueIdentity = string.Empty;
         #endregion
 
         public Service()
@@ -32,19 +33,7 @@ namespace WindowsService
             timerIntervalInSeconds = ConfigurationManager.AppSettings["TimerIntervalInSeconds"] != null ? Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000 : timerIntervalInSeconds;
             daysToSkip = ConfigurationManager.AppSettings["DaysToSkip"] ?? daysToSkip;
 
-            ManagementObjectSearcher moSearcher = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
-
-            foreach (ManagementObject wmi_HD in moSearcher.Get())
-            {
-                ArrayList hardDriveDetails = new ArrayList();
-
-                HardDrive hd = new HardDrive();  // User Defined Class
-                hd.Model = wmi_HD["Model"].ToString();  //Model Number
-                hd.Type = wmi_HD["InterfaceType"].ToString();  //Interface Type
-                hd.SerialNo = wmi_HD["SerialNumber"].ToString(); //Serial Number
-                hardDriveDetails.Add(hd);
-
-            }
+            HDUniqueIdentity = Utilities.Utilities.GetHDUniqueIdentity();
         }
 
         protected override void OnStart(string[] args)

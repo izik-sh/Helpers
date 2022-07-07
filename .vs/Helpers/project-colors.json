@@ -70,7 +70,12 @@
       "ProjectGuid": "68206f1d-39ba-4cb0-938f-477719a3daf0",
       "DisplayName": "AspNetApplication",
       "ColorIndex": 12
+    },
+    "de9e0e8d-efcc-4983-a7af-a86d67b61a01": {
+      "ProjectGuid": "de9e0e8d-efcc-4983-a7af-a86d67b61a01",
+      "DisplayName": "Utilities",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 13
+  "NextColorIndex": 14
 }

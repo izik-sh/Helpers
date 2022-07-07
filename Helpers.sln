@@ -28,6 +28,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption", "Encryption\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetApplication", "AspNetApplication\AspNetApplication.csproj", "{68206F1D-39BA-4CB0-938F-477719A3DAF0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeView", "TreeView\TreeView\TreeView.csproj", "{930B24A8-91C4-465C-8ACB-0194E18FA975}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SqlSnippets", "SqlSnippets\SqlSnippets.sqlproj", "{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +78,16 @@ Global
 		{68206F1D-39BA-4CB0-938F-477719A3DAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68206F1D-39BA-4CB0-938F-477719A3DAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68206F1D-39BA-4CB0-938F-477719A3DAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{930B24A8-91C4-465C-8ACB-0194E18FA975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930B24A8-91C4-465C-8ACB-0194E18FA975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930B24A8-91C4-465C-8ACB-0194E18FA975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930B24A8-91C4-465C-8ACB-0194E18FA975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

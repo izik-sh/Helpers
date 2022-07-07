@@ -62,7 +62,7 @@ namespace WindowsService
             try
             {
                 ExeConfigurationFileMap configFileMap = new ExeConfigurationFileMap();
-                configFileMap.ExeConfigFilename = "AppPrivate.config"; // AppPrivate.config should be present in root directory from where application exe is kicked off
+                configFileMap.ExeConfigFilename = "AppPrivate.config"; // AppPrivate.config should be present in root directory from where application exe is running
 
                 // Get the mapped configuration file
                 var config = ConfigurationManager.OpenMappedExeConfiguration(

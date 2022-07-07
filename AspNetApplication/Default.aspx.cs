@@ -20,6 +20,11 @@ namespace AspNetApplication
             dt.Columns.Add("A", System.Type.GetType("System.Int32"));
             dt.Columns.Add("B");
             dt.Columns.Add("C");
+
+            DataColumnCollection columns = dt.Columns;
+            bool isColumnExists = columns.Contains("A");
+            isColumnExists = columns.Contains("a");
+            isColumnExists = columns.Contains("d");
             DataRow dataRow = dt.NewRow();
             dataRow["A"] = 1;
             dataRow["B"] = 11;
