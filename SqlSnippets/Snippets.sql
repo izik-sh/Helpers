@@ -1,5 +1,8 @@
-﻿--- Snippets ---
+﻿-- ****************
+-- *** Snippets ***
+-- ****************
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 BEGIN -- Find text in objects
     SELECT DISTINCT
            o.name AS Object_Name,
@@ -10,24 +13,21 @@ BEGIN -- Find text in objects
              ON m.object_id = o.object_id
     WHERE m.definition Like '%some text to find';
 END
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 BEGIN -- Get last update objects
 
     SELECT name, create_date, modify_date, type
     FROM sys.objects
     -- WHERE type in ('P','U','IF')
     ORDER BY modify_date DESC
-
-    ---------------------------------------------------------------------------------------------------------------------------------------------------------
     -- List of object types: https://docs.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-objects-transact-sql?view=sql-server-ver16 --
-    ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 END
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 BEGIN -- Get activities params
 
     BEGIN -- Get last connections executues
-       select * from  sys.dm_exec_connections
+       SELECT * FROM sys.dm_exec_connections
     END 
 
     BEGIN -- Example 1 
@@ -40,7 +40,7 @@ BEGIN -- Get activities params
        CONNECTIONPROPERTY('client_net_address') AS client_net_address,
        CURRENT_USER AS 'CURRENT_USER',
        SERVERPROPERTY ('property_name') AS 'propertyname',
-       SERVERPROPERTY('MachineName') as 'MachineName',
+       SERVERPROPERTY('MachineName') AS 'MachineName',
        HOST_NAME() as 'HOST_NAME'
     END
 
@@ -54,3 +54,4 @@ BEGIN -- Get activities params
         WHERE spid = @@SPID
     END
 END
+---------------------------------------------------------------------------------------------------------------------------------------------------------
