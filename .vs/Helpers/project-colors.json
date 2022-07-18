@@ -75,7 +75,17 @@
       "ProjectGuid": "de9e0e8d-efcc-4983-a7af-a86d67b61a01",
       "DisplayName": "Utilities",
       "ColorIndex": 13
+    },
+    "930b24a8-91c4-465c-8acb-0194e18fa975": {
+      "ProjectGuid": "930b24a8-91c4-465c-8acb-0194e18fa975",
+      "DisplayName": "TreeView",
+      "ColorIndex": 14
+    },
+    "e64762ad-aaff-4d5c-b10b-171dd7481bff": {
+      "ProjectGuid": "e64762ad-aaff-4d5c-b10b-171dd7481bff",
+      "DisplayName": "SqlSnippets",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 0
 }

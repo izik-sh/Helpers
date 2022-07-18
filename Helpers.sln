@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeView", "TreeView\TreeVi
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SqlSnippets", "SqlSnippets\SqlSnippets.sqlproj", "{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryptions", "Encryptions\Encryptions.csproj", "{ECAF22E5-62D6-4124-ADFC-E19A5FBC9AC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,10 @@ Global
 		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E64762AD-AAFF-4D5C-B10B-171DD7481BFF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ECAF22E5-62D6-4124-ADFC-E19A5FBC9AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAF22E5-62D6-4124-ADFC-E19A5FBC9AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAF22E5-62D6-4124-ADFC-E19A5FBC9AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAF22E5-62D6-4124-ADFC-E19A5FBC9AC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
