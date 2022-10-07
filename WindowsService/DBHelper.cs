@@ -71,10 +71,18 @@ namespace WindowsService
                 //get the relevant section from the config object
                 ConnectionStringsSection connectionSection = (ConnectionStringsSection)config.GetSection("connectionStrings");
 
-                //get value
-                connection = connectionSection.ConnectionStrings["ConnectionString"].ConnectionString;
+                //get value if found private config (AppPrivate.config)
+                if (connectionSection.ConnectionStrings["ConnectionString"] != null)
+                {
+                    connection = connectionSection.ConnectionStrings["ConnectionString"].ConnectionString;
+                }
+                //get value from main config
+                else if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+                {
+                    connection = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }

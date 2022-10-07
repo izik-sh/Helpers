@@ -1,7 +1,7 @@
 ﻿-- ********************
 -- *** Sql Snippets ***
 -- ********************
-
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 BEGIN -- Find text in objects
     SELECT DISTINCT
@@ -59,7 +59,47 @@ BEGIN -- Backup / copy table to new table
     
     SELECT * INTO DESTINATION_TABLE_NAME
     FROM SOURCE_TABLE_NAME
-    WHERE [...]
+    --WHERE [...]
 
 END
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+BEGIN -- Delete duplicated rows
+    IF OBJECT_ID('tempdb..#DuplicateTest') is not null
+    BEGIN
+	    DROP TABLE #DuplicateTest
+    END
+
+    CREATE TABLE #DuplicateTest (ID INT, FirstName NVARCHAR(50),LastName NVARCHAR(50))
+
+    DELETE FROM #DuplicateTest
+    INSERT INTO #DuplicateTest VALUES(1, 'Bob','Smith') 
+    INSERT INTO #DuplicateTest VALUES(2, 'Dave','Jones') 
+    INSERT INTO #DuplicateTest VALUES(3, 'Karen','White') 
+    INSERT INTO #DuplicateTest VALUES(1, 'Bob','Smith')
+    INSERT INTO #DuplicateTest VALUES(7, 'Bob','Smith')	
+    INSERT INTO #DuplicateTest VALUES(7, 'Bob','Smith')	
+    INSERT INTO #DuplicateTest VALUES(7, 'Bob','Smith 2')
+    INSERT INTO #DuplicateTest VALUES(8, 'Bob','Smith 2')	
+
+
+    SELECT * FROM #DuplicateTest; 
+
+    DELETE FROM a
+    FROM #DuplicateTest a
+    JOIN
+    (
+    SELECT MAX(%%lockres%%) pseudoID, FirstName, LastName
+    FROM #DuplicateTest
+    GROUP BY  FirstName, LastName
+    ) b ON b.LastName = a.LastName AND b.FirstName = a.FirstName AND b.pseudoID <> a.%%lockres%%
+
+    SELECT * FROM #DuplicateTest ORDER BY ID 
+END
+
+
+
+
+
+
+
+*/

@@ -145,3 +145,11 @@ C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.dll
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\ref\Examples.dll
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.pdb
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.genruntimeconfig.cache
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOut.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOut.pdb
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0.pdb

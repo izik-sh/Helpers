@@ -85,7 +85,47 @@
       "ProjectGuid": "e64762ad-aaff-4d5c-b10b-171dd7481bff",
       "DisplayName": "SqlSnippets",
       "ColorIndex": 15
+    },
+    "ecaf22e5-62d6-4124-adfc-e19a5fbc9ac9": {
+      "ProjectGuid": "ecaf22e5-62d6-4124-adfc-e19a5fbc9ac9",
+      "DisplayName": "Encryptions",
+      "ColorIndex": 0
+    },
+    "93470db0-d849-4dcc-8fb5-539ceba3fc3d": {
+      "ProjectGuid": "93470db0-d849-4dcc-8fb5-539ceba3fc3d",
+      "DisplayName": "Metronome",
+      "ColorIndex": 1
+    },
+    "ca7ad7a8-ca59-425e-a6b0-c61b30176f31": {
+      "ProjectGuid": "ca7ad7a8-ca59-425e-a6b0-c61b30176f31",
+      "DisplayName": "TelerikDemo",
+      "ColorIndex": 2
+    },
+    "ee810ac1-35a0-4254-b289-b5c15dddaf1b": {
+      "ProjectGuid": "ee810ac1-35a0-4254-b289-b5c15dddaf1b",
+      "DisplayName": "TelerikDemo",
+      "ColorIndex": 3
+    },
+    "d7242623-9848-4cc9-aab1-9d6b93942a6c": {
+      "ProjectGuid": "d7242623-9848-4cc9-aab1-9d6b93942a6c",
+      "DisplayName": "AspNetWebApplication",
+      "ColorIndex": 4
+    },
+    "fe60a7cc-2cf5-4fdc-948e-1990ed0abff6": {
+      "ProjectGuid": "fe60a7cc-2cf5-4fdc-948e-1990ed0abff6",
+      "DisplayName": "TimeOutFramwork4.0",
+      "ColorIndex": 5
+    },
+    "98c42d4f-57a3-49ed-b1fd-a05d9bcdb95d": {
+      "ProjectGuid": "98c42d4f-57a3-49ed-b1fd-a05d9bcdb95d",
+      "DisplayName": "TimeOut",
+      "ColorIndex": 6
+    },
+    "b01aa061-afbb-49ee-a55d-067362725866": {
+      "ProjectGuid": "b01aa061-afbb-49ee-a55d-067362725866",
+      "DisplayName": "WebSite",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 8
 }

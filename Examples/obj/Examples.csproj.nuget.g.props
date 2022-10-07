@@ -13,4 +13,8 @@
     <SourceRoot Include="C:\Users\iziks\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgEnterpriseLibrary_Common Condition=" '$(PkgEnterpriseLibrary_Common)' == '' ">C:\Users\iziks\.nuget\packages\enterpriselibrary.common\6.0.1304</PkgEnterpriseLibrary_Common>
+    <PkgEnterpriseLibrary_Logging Condition=" '$(PkgEnterpriseLibrary_Logging)' == '' ">C:\Users\iziks\.nuget\packages\enterpriselibrary.logging\6.0.1304</PkgEnterpriseLibrary_Logging>
+  </PropertyGroup>
 </Project>
