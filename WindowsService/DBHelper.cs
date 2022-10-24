@@ -14,10 +14,10 @@ namespace WindowsService
     {
         static string connectionString = GetConnectionString();
 
-        public static DataTable GetDataTable(string query, string[] sqlParameters, object[] sqlParametersValues, bool isStoredProcedure = true)
+        public static DataTable GetDataTable(string query, string[] sqlParameters, object[] sqlParametersValues, bool isStoredProcedure = true, string connectionStringOverload = "")
         {
             DataTable dt = new DataTable();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(!string.IsNullOrEmpty(connectionStringOverload) ? connectionStringOverload : connectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {

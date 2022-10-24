@@ -58,6 +58,7 @@ namespace WindowsService
             increaseHour++;
             endTime[0] = increaseHour.ToString();
             string alertMessage = "המחשב יכבה בעוד 15 דקות";
+            MessageBox.Show(alertMessage);
 
             try
             {
