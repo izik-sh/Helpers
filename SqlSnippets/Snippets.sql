@@ -95,8 +95,30 @@ BEGIN -- Delete duplicated rows
 
     SELECT * FROM #DuplicateTest ORDER BY ID 
 END
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+BEGIN -- Dynamic PIVOT
+ECLARE @cols AS NVARCHAR(MAX),
+    @query  AS NVARCHAR(MAX)
 
+select @cols = STUFF((SELECT distinct ',' + QUOTENAME(AssignmentName) 
+                    from yourtable
+            FOR XML PATH(''), TYPE
+            ).value('.', 'NVARCHAR(MAX)') 
+        ,1,1,'')
 
+set @query = 'SELECT StudentName, ' + @cols + ' from 
+             (
+                select StudentName, AssignmentName, grade
+                from yourtable
+            ) x
+            pivot 
+            (
+                min(grade)
+                for assignmentname in (' + @cols + ')
+            ) p '
+
+execute(@query)
+END
 
 
 
