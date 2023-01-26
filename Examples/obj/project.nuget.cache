@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MsKDCKC8h2u+uiZS2SQM90i90u7YvQPTmBA2RJe8FNTD2sq1XVQ2w6UD24QLt0g1Lrt+p12OPv0tkqclR2NuqA==",
+  "dgSpecHash": "gQ1N12P8O2qBYDRMsf/V55ICCtdUqeNZcqrmFQUwDlaE8A4ovJYWeraGySoL6w7hZh1qKr7jgRsk9HIbUYihLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iziks\\Source\\Repos\\Helpers\\Examples\\Examples.csproj",
+  "projectFilePath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iziks\\.nuget\\packages\\enterpriselibrary.common\\6.0.1304\\enterpriselibrary.common.6.0.1304.nupkg.sha512",
     "C:\\Users\\iziks\\.nuget\\packages\\enterpriselibrary.logging\\6.0.1304\\enterpriselibrary.logging.6.0.1304.nupkg.sha512",

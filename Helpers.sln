@@ -68,6 +68,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite\", "{B01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlTester", "SqlTester\SqlTester.csproj", "{FAAEC07C-8DA0-4138-8361-2CC2A89C7224}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTest", "ApiTest\ApiTest.csproj", "{FED4F2AE-79A1-47C4-A318-0725C96C1E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilitiesForm", "UtilitiesForm\UtilitiesForm.csproj", "{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,6 +160,14 @@ Global
 		{FAAEC07C-8DA0-4138-8361-2CC2A89C7224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAAEC07C-8DA0-4138-8361-2CC2A89C7224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAAEC07C-8DA0-4138-8361-2CC2A89C7224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED4F2AE-79A1-47C4-A318-0725C96C1E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED4F2AE-79A1-47C4-A318-0725C96C1E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED4F2AE-79A1-47C4-A318-0725C96C1E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED4F2AE-79A1-47C4-A318-0725C96C1E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
