@@ -7,26 +7,6 @@ using System.Threading.Tasks;
 
 namespace ApiTest
 {
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
-    internal class ExchangeRate2
-    {
-        [JsonProperty(PropertyName = "Key")]
-        public string key { get; set; }
-
-        [JsonProperty(PropertyName = "currentExchangeRate")]
-        public decimal currentExchangeRate { get; set; }
-
-        [JsonProperty(PropertyName = "currentChange")]
-        public string currentChange { get; set; }
-     
-        [JsonProperty(PropertyName = "lastUpdate")]
-        public DateTime lastUpdate { get; set; }
-
-
-
-
-    }
-
     public class ExchangeRate
     {
         public string key { get; set; }
