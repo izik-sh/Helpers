@@ -16,7 +16,7 @@ namespace ApiTest
         public DateTime lastUpdate { get; set; }
     }
 
-    public class ExchangeRates
+    public class Root
     {
         public List<ExchangeRate> exchangeRates { get; set; }
     }

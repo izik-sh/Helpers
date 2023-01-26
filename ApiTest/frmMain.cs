@@ -21,7 +21,13 @@ namespace ApiTest
         public frmMain()
         {
             InitializeComponent();
+            Init();
             Run();
+        }
+
+        private void Init()
+        {
+            toolStripStatusLabel.Text = String.Empty;
         }
 
         private void Run()
@@ -114,12 +120,12 @@ namespace ApiTest
                                 //ExchangeRate[] items = JsonConvert.DeserializeObject<ExchangeRate[]>(responseFromServer);
                                 #endregion
 
-                                ExchangeRates exchangeRates = JsonConvert.DeserializeObject<ExchangeRates>(responseFromServer);
+                                Root root = JsonConvert.DeserializeObject<Root>(responseFromServer);
 
                             }
-                            catch (Exception ex2)
+                            catch (Exception exc)
                             {
-
+                                toolStripStatusLabel.Text = exc.ToString();
                             }
                             output = responseFromServer;
                         }
@@ -130,13 +136,14 @@ namespace ApiTest
                     response.Close();
 
                     txtResults.Text = output;
-
+                    toolStripStatusLabel.Text = "Operation performed successfully";
                     //MessageBox.Show("Success to connect " + txtUrl.Text);
                 }
 
             }
             catch (Exception ex)
             {
+                toolStripStatusLabel.Text = ex.Message;
                 MessageBox.Show(ex.Message);
             }
         }

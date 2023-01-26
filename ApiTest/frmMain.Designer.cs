@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.txtResults = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.lblUrl = new System.Windows.Forms.Label();
             this.chkTLS = new System.Windows.Forms.CheckBox();
             this.chkServerCertificateValidationCallback = new System.Windows.Forms.CheckBox();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtResults
@@ -105,20 +109,41 @@
             this.chkServerCertificateValidationCallback.Text = "Use Certificate";
             this.chkServerCertificateValidationCallback.UseVisualStyleBackColor = true;
             // 
+            // statusStrip
+            // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 554);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(1194, 32);
+            this.statusStrip.TabIndex = 6;
+            this.statusStrip.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(169, 25);
+            this.toolStripStatusLabel.Text = "toolStripStatusLabel";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 586);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.chkServerCertificateValidationCallback);
             this.Controls.Add(this.chkTLS);
             this.Controls.Add(this.lblUrl);
             this.Controls.Add(this.txtUrl);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txtResults);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
             this.Text = "Api Test";
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +157,8 @@
         private System.Windows.Forms.Label lblUrl;
         private System.Windows.Forms.CheckBox chkTLS;
         private System.Windows.Forms.CheckBox chkServerCertificateValidationCallback;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
     }
 }
 
