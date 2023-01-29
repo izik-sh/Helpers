@@ -37,6 +37,7 @@
             this.chkServerCertificateValidationCallback = new System.Windows.Forms.CheckBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tv = new System.Windows.Forms.TreeView();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.txtResults.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtResults.Multiline = true;
             this.txtResults.Name = "txtResults";
-            this.txtResults.Size = new System.Drawing.Size(1154, 466);
+            this.txtResults.Size = new System.Drawing.Size(1154, 241);
             this.txtResults.TabIndex = 0;
             // 
             // btnRun
@@ -126,11 +127,19 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(169, 25);
             this.toolStripStatusLabel.Text = "toolStripStatusLabel";
             // 
+            // tv
+            // 
+            this.tv.Location = new System.Drawing.Point(20, 350);
+            this.tv.Name = "tv";
+            this.tv.Size = new System.Drawing.Size(1154, 180);
+            this.tv.TabIndex = 7;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 586);
+            this.Controls.Add(this.tv);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.chkServerCertificateValidationCallback);
             this.Controls.Add(this.chkTLS);
@@ -159,6 +168,7 @@
         private System.Windows.Forms.CheckBox chkServerCertificateValidationCallback;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.TreeView tv;
     }
 }
 

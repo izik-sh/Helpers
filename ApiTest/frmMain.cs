@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
@@ -122,12 +123,27 @@ namespace ApiTest
 
                                 Root root = JsonConvert.DeserializeObject<Root>(responseFromServer);
 
+                                foreach (ExchangeRate rate in root.ExchangeRates)
+                                {
+                                    ExchangeRate exchangeRate = new ExchangeRate(rate.Key, rate.CurrentExchangeRate, rate.CurrentChange, rate.Unit, rate.LastUpdate);
+
+                                    TreeNode tNode;
+                                    tNode = tv.Nodes.Add("ExchangeRate");
+
+                                    int index = tv.Nodes.Count - 1;
+                                    tv.Nodes[index].Nodes.Add(nameof(exchangeRate.Key) + ": " + exchangeRate.Key);
+                                    tv.Nodes[index].Nodes.Add(nameof(exchangeRate.CurrentExchangeRate) + ": " + exchangeRate.CurrentExchangeRate.ToString());
+                                    tv.Nodes[index].Nodes.Add(nameof(exchangeRate.CurrentChange) + ": " + exchangeRate.CurrentChange.ToString());
+                                    tv.Nodes[index].Nodes.Add(nameof(exchangeRate.Unit) + ": " + exchangeRate.Unit.ToString());
+                                    tv.Nodes[index].Nodes.Add(nameof(exchangeRate.LastUpdate) + ": " + exchangeRate.LastUpdate.ToString());
+                                }
                             }
                             catch (Exception exc)
                             {
                                 toolStripStatusLabel.Text = exc.ToString();
                             }
                             output = responseFromServer;
+                            this.Controls.Add(tv);
                         }
                     }
 
