@@ -125,7 +125,22 @@
       "ProjectGuid": "b01aa061-afbb-49ee-a55d-067362725866",
       "DisplayName": "WebSite",
       "ColorIndex": 7
+    },
+    "fed4f2ae-79a1-47c4-a318-0725c96c1e58": {
+      "ProjectGuid": "fed4f2ae-79a1-47c4-a318-0725c96c1e58",
+      "DisplayName": "ApiTest",
+      "ColorIndex": 8
+    },
+    "5ab2c914-ef5c-4887-aa7e-4dea13ab6029": {
+      "ProjectGuid": "5ab2c914-ef5c-4887-aa7e-4dea13ab6029",
+      "DisplayName": "UtilitiesForm",
+      "ColorIndex": 9
+    },
+    "faaec07c-8da0-4138-8361-2cc2a89c7224": {
+      "ProjectGuid": "faaec07c-8da0-4138-8361-2cc2a89c7224",
+      "DisplayName": "SqlTester",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 11
 }

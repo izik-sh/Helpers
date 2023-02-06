@@ -122,13 +122,14 @@ namespace ApiTest
                                 #endregion
 
                                 Root root = JsonConvert.DeserializeObject<Root>(responseFromServer);
+                                int counter = 0;
 
                                 foreach (ExchangeRate rate in root.ExchangeRates)
                                 {
                                     ExchangeRate exchangeRate = new ExchangeRate(rate.Key, rate.CurrentExchangeRate, rate.CurrentChange, rate.Unit, rate.LastUpdate);
 
                                     TreeNode tNode;
-                                    tNode = tv.Nodes.Add("ExchangeRate");
+                                    tNode = tv.Nodes.Add("ExchangeRate " + (++counter).ToString() + " of " + root.ExchangeRates.Count);
 
                                     int index = tv.Nodes.Count - 1;
                                     tv.Nodes[index].Nodes.Add(nameof(exchangeRate.Key) + ": " + exchangeRate.Key);
