@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
+      "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj",
       "projectName": "PostJson",
-      "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
+      "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj",
       "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\obj\\",
+      "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
