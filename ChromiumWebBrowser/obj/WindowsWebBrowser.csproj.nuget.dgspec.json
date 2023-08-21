@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ChromiumWebBrowser\\WindowsWebBrowser.csproj": {}
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\ChromiumWebBrowser\\WindowsWebBrowser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ChromiumWebBrowser\\WindowsWebBrowser.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\ChromiumWebBrowser\\WindowsWebBrowser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ChromiumWebBrowser\\WindowsWebBrowser.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\ChromiumWebBrowser\\WindowsWebBrowser.csproj",
         "projectName": "WindowsWebBrowser",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ChromiumWebBrowser\\WindowsWebBrowser.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ChromiumWebBrowser\\WindowsWebBrowser.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ChromiumWebBrowser\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ChromiumWebBrowser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

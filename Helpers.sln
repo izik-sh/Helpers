@@ -47,6 +47,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "WebSite\", "{B01AA061-AFBB-49EE-A55D-067362725866}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/localhost_57675"
 		Debug.AspNetCompiler.PhysicalPath = "WebSite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57675\"
@@ -71,6 +72,33 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiTest", "ApiTest\ApiTest.csproj", "{FED4F2AE-79A1-47C4-A318-0725C96C1E58}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilitiesForm", "UtilitiesForm\UtilitiesForm.csproj", "{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtmlHelper", "HtmlHelper\HtmlHelper.csproj", "{4CDFC6B6-2429-49D6-A928-9D8B347E931C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GeneralTestWebSite", "GeneralTestWebSite\", "{9E44AF35-4C7D-41F2-B298-02EFE2856FDD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{591512f2-5f53-4e9c-b5e5-7d920c8c24df}|HelperClasses.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59238"
+		Debug.AspNetCompiler.PhysicalPath = "GeneralTestWebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59238\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59238"
+		Release.AspNetCompiler.PhysicalPath = "GeneralTestWebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59238\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59238"
+		SlnRelativePath = "GeneralTestWebSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperClasses", "HelperClasses\HelperClasses.csproj", "{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -168,6 +196,18 @@ Global
 		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB2C914-EF5C-4887-AA7E-4DEA13AB6029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDFC6B6-2429-49D6-A928-9D8B347E931C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDFC6B6-2429-49D6-A928-9D8B347E931C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDFC6B6-2429-49D6-A928-9D8B347E931C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDFC6B6-2429-49D6-A928-9D8B347E931C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E44AF35-4C7D-41F2-B298-02EFE2856FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E44AF35-4C7D-41F2-B298-02EFE2856FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E44AF35-4C7D-41F2-B298-02EFE2856FDD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E44AF35-4C7D-41F2-B298-02EFE2856FDD}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

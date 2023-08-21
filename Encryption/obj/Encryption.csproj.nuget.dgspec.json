@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Encryption\\Encryption.csproj": {}
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Encryption\\Encryption.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Encryption\\Encryption.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Encryption\\Encryption.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Encryption\\Encryption.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\Encryption\\Encryption.csproj",
         "projectName": "Encryption",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Encryption\\Encryption.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Encryption\\Encryption.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Encryption\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Encryption\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

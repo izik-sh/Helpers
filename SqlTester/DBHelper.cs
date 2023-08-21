@@ -53,14 +53,13 @@ public class DBHelper
         return dt;
     }
 
-    [Obsolete]
     private static string GetConnectionString()
     {
         string connection = string.Empty;
 
         try
         {
-            connection = ConfigurationSettings.AppSettings["ConnectionString"];
+            connection = ConfigurationManager.AppSettings["ConnectionString"];
         }
         catch (Exception ex)
         {

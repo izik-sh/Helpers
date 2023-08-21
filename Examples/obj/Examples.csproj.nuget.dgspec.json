@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Examples\\Examples.csproj": {}
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Email\\Email.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Email\\Email.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj",
         "projectName": "Email",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Email\\Email.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Email\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Examples\\Examples.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Examples\\Examples.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj",
         "projectName": "Examples",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Examples\\Examples.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\Examples.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Examples\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Examples\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,20 +98,23 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Email\\Email.csproj": {
-                "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\Email\\Email.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\Email\\Email.csproj"
               },
-              "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ExtensionMethods\\ExtensionMethods.csproj": {
-                "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ExtensionMethods\\ExtensionMethods.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
               },
-              "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj": {
-                "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj"
               },
-              "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj": {
-                "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj"
               },
-              "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOut\\TimeOut.csproj": {
-                "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOut\\TimeOut.csproj"
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj"
+              },
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOut\\TimeOut.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOut\\TimeOut.csproj"
               }
             }
           }
@@ -174,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ExtensionMethods\\ExtensionMethods.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ExtensionMethods\\ExtensionMethods.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj",
         "projectName": "ExtensionMethods",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ExtensionMethods\\ExtensionMethods.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\ExtensionMethods\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -233,14 +236,73 @@
         }
       }
     },
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj",
-        "projectName": "PostJson",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\PostJson.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj",
+        "projectName": "HtmlHelper",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\PostJson\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\iziks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
+        "projectName": "PostJson",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj",
+        "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -298,14 +360,14 @@
         }
       }
     },
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj",
         "projectName": "TimeOutFramwork4.0",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOutFramwork4.0\\TimeOutFramwork4.0.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOutFramwork4.0\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOutFramwork4.0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -357,14 +419,14 @@
         }
       }
     },
-    "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOut\\TimeOut.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOut\\TimeOut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOut\\TimeOut.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOut\\TimeOut.csproj",
         "projectName": "TimeOut",
-        "projectPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOut\\TimeOut.csproj",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOut\\TimeOut.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\Source\\Repos\\HelpersV2\\TimeOut\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\TimeOut\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

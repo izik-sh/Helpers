@@ -4,8 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Microsoft.AspNet.FriendlyUrls;
-using Microsoft.AspNet.FriendlyUrls.Resolvers;
 
 public partial class ViewSwitcher : System.Web.UI.UserControl
 {

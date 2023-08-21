@@ -153,3 +153,5 @@ C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOut.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOut.pdb
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0.pdb
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HtmlHelper.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HtmlHelper.pdb

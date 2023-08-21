@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+    <script language="JavaScript">
+
+        function openWin() {
+            var myBars = 'directories=no,location=no,menubar=no,status=no';
+            myBars += ',titlebar=no,toolbar=no';
+            var myOptions = 'scrollbars=no,width=400,height=200,resizeable=no';
+            var myFeatures = myBars + ',' + myOptions;
+            var myReadme = 'This is a test.'
+            var newWin = open('frame.aspx', 'myDoc', myFeatures);
+            //newWin.document.writeln('<form>');
+            //newWin.document.writeln('<table>');
+
+            //newWin.document.writeln('<tr valign=TOP><td>');
+            //newWin.document.writeln('<textarea cols=45 rows=7 wrap=SOFT>');
+            //newWin.document.writeln(myReadme + '</textarea>');
+            //newWin.document.writeln('</td></tr>');
+            //newWin.document.writeln('<tr><td>');
+            var myJS = "self.close()";
+
+            //newWin.document.writeln('<input type=BUTTON value="Close"');
+            //newWin.document.writeln('onClick="' + myJS + '">');
+
+            /*var myJS = "window.opener.close();window.opener=null"*/
+            //newWin.document.writeln('</td></tr>');
+            //newWin.document.writeln('</table></form>');
+            //newWin.document.close();
+            newWin.focus();
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <b>Click the following button to open a new window: </b>
+        <input type=BUTTON value="Open" onClick='openWin()'>
+    </form>
+</body>
+</html>

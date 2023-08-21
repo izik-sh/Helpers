@@ -140,7 +140,27 @@
       "ProjectGuid": "faaec07c-8da0-4138-8361-2cc2a89c7224",
       "DisplayName": "SqlTester",
       "ColorIndex": 10
+    },
+    "4cdfc6b6-2429-49d6-a928-9d8b347e931c": {
+      "ProjectGuid": "4cdfc6b6-2429-49d6-a928-9d8b347e931c",
+      "DisplayName": "HtmlHelper",
+      "ColorIndex": 11
+    },
+    "9e44af35-4c7d-41f2-b298-02efe2856fdd": {
+      "ProjectGuid": "9e44af35-4c7d-41f2-b298-02efe2856fdd",
+      "DisplayName": "GeneralTestWebSite",
+      "ColorIndex": 12
+    },
+    "8a2b3d5c-d4b2-46fd-b81b-1a2bd0fdd9e6": {
+      "ProjectGuid": "8a2b3d5c-d4b2-46fd-b81b-1a2bd0fdd9e6",
+      "DisplayName": "CSVHelper",
+      "ColorIndex": 13
+    },
+    "591512f2-5f53-4e9c-b5e5-7d920c8c24df": {
+      "ProjectGuid": "591512f2-5f53-4e9c-b5e5-7d920c8c24df",
+      "DisplayName": "HelperClasses",
+      "ColorIndex": 14
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 15
 }

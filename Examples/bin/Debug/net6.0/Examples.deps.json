@@ -12,6 +12,7 @@
           "EnterpriseLibrary.Common": "6.0.1304",
           "EnterpriseLibrary.Logging": "6.0.1304",
           "ExtensionMethods": "1.0.0",
+          "HtmlHelper": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "PostJson": "1.0.0",
           "System.ServiceModel.Duplex": "4.8.1",
@@ -301,6 +302,11 @@
           "ExtensionMethods.dll": {}
         }
       },
+      "HtmlHelper/1.0.0": {
+        "runtime": {
+          "HtmlHelper.dll": {}
+        }
+      },
       "PostJson/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -508,6 +514,11 @@
       "sha512": ""
     },
     "ExtensionMethods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HtmlHelper/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

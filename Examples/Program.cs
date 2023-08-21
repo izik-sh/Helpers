@@ -1,12 +1,75 @@
 ﻿// See https://aka.ms/new-console-template for more information
-#region Strings
-using Microsoft.Extensions.Configuration;
-using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
-using Microsoft.Practices.EnterpriseLibrary.Logging.Configuration;
 
-string strFroPadding = "izik";
-string a = strFroPadding.PadLeft(10);
-string b = strFroPadding.PadRight(10);
+#region Culture
+using System.Globalization;
+
+try
+{
+    string datetimestring = "14/5/2023";
+    DateTime dateValue;
+    CultureInfo culture = CultureInfo.CurrentCulture;
+    DateTimeStyles styles = DateTimeStyles.None;
+    DateTime.TryParse(datetimestring, culture, styles, out dateValue);
+
+    DateTime date = new DateTime();
+    try
+    {
+        string CurrentPattern = Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern;
+        string[] Split = new string[] { "-", "/", @"\", "." };
+        string[] Patternvalue = CurrentPattern.Split(Split, StringSplitOptions.None);
+        string[] DateSplit = datetimestring.Split(Split, StringSplitOptions.None);
+        string NewDate = "";
+        if (Patternvalue[0].ToLower().Contains("d") == true && Patternvalue[1].ToLower().Contains("m") == true && Patternvalue[2].ToLower().Contains("y") == true)
+        {
+            NewDate = DateSplit[1] + "/" + DateSplit[0] + "/" + DateSplit[2];
+        }
+        else if (Patternvalue[0].ToLower().Contains("m") == true && Patternvalue[1].ToLower().Contains("d") == true && Patternvalue[2].ToLower().Contains("y") == true)
+        {
+            NewDate = DateSplit[0] + "/" + DateSplit[1] + "/" + DateSplit[2];
+        }
+        else if (Patternvalue[0].ToLower().Contains("y") == true && Patternvalue[1].ToLower().Contains("m") == true && Patternvalue[2].ToLower().Contains("d") == true)
+        {
+            NewDate = DateSplit[2] + "/" + DateSplit[0] + "/" + DateSplit[1];
+        }
+        else if (Patternvalue[0].ToLower().Contains("y") == true && Patternvalue[1].ToLower().Contains("d") == true && Patternvalue[2].ToLower().Contains("m") == true)
+        {
+            NewDate = DateSplit[2] + "/" + DateSplit[1] + "/" + DateSplit[0];
+        }
+        date = DateTime.Parse(NewDate, Thread.CurrentThread.CurrentCulture);
+    }
+    catch (Exception ex)
+    {
+
+    }
+    finally
+    {
+
+    }
+
+
+
+}
+catch (Exception ex)
+{
+
+}
+#endregion
+
+return;
+
+#region Get HTML Content
+string urlToRead = "https://ethos.smarticket.co.il/iframe/רוקולנוע_לייב_%7C_להקת_הכבשים-_מופע_מחווה_ל_כבש_ה16_?id=21776";
+string htmlHelperResults = HtmlHelper.HtmlHelper.GetHtmlContentFromUrl(urlToRead);
+#endregion
+
+#region Strings
+//using Microsoft.Extensions.Configuration;
+//using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
+//using Microsoft.Practices.EnterpriseLibrary.Logging.Configuration;
+
+string strForPadding = "izik";
+string a = strForPadding.PadLeft(10);
+string b = strForPadding.PadRight(10);
 #endregion
 
 #region TimeOut
@@ -17,7 +80,7 @@ try
 {
     TimeOutFramwork4_0.TimeOutFramwork4_0.CallTimedOutMethod(SomeMethod2, Error, 5000);
 }
-catch(Exception ex)
+catch (Exception ex)
 {
     Console.WriteLine(ex.ToString());
 }
@@ -35,7 +98,7 @@ void SomeMethod2()
         Thread.Sleep(1000);
         Console.WriteLine("Finished SomeMethod2");
     }
-    catch(System.Exception ex)
+    catch (System.Exception ex)
     {
         Console.WriteLine(ex.Message);
     }
@@ -46,8 +109,6 @@ void Error()
     Console.WriteLine("Timeout");
 }
 #endregion
-
-return;
 
 #region ExtensionMethods
 #region Demo 1
