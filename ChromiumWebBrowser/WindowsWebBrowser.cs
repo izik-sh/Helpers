@@ -16,7 +16,9 @@ namespace WebBrowser
     {
         readonly ChromiumWebBrowser chromeBrowser1;
         readonly ChromiumWebBrowser chromeBrowser2;
-
+        readonly ChromiumWebBrowser chromeBrowser3;
+        double zoomLevel = 0.5;
+        double zoom = 0;
         public WindowsWebBrowser()
         {
             InitializeComponent();
@@ -33,24 +35,42 @@ namespace WebBrowser
             //this.Controls.Add(browser2);
             this.WindowState = FormWindowState.Maximized;
 
-            string url1 = "http://poet.co.il";
-            string url2 = "https://google.com";
+            #region Set default setting for browser
+            string url1 = "https://web.telegram.org/k/#-1826947962";
+            string url2 = "https://web.whatsapp.com/";
+            string url3 = "https://www.facebook.com/messages/t";
 
-            CefSettings settings = new CefSettings();
-            // Initialize cef with the provided settings
-            Cef.Initialize(settings);
+            txtUrlForPanel1.Text = url1;
+            txtUrlForPanel2.Text = url2;
+            txtUrlForPanel3.Text = url3;
 
-            // Create a browser component
-            //ChromiumWebBrowser chromeBrowser1;
             chromeBrowser1 = new ChromiumWebBrowser(url1);
-            // Add it to the form and fill it to the form window.
-            splitContainer.Panel1.Controls.Add(chromeBrowser1);
-            chromeBrowser1.Dock = DockStyle.Fill;
-
-            //ChromiumWebBrowser chromeBrowser2;
             chromeBrowser2 = new ChromiumWebBrowser(url2);
-            splitContainer.Panel2.Controls.Add(chromeBrowser2);
+            chromeBrowser3 = new ChromiumWebBrowser(url3);
+
+            chromeBrowser1.Dock = DockStyle.Fill;
             chromeBrowser2.Dock = DockStyle.Fill;
+            chromeBrowser3.Dock = DockStyle.Fill;
+
+            #endregion
+
+            #region Initialize cef with the provided settings
+            CefSettings settings = new CefSettings();
+            //Cef.Initialize(settings);
+            #endregion
+
+            SplitContainer sc = new SplitContainer();
+            sc.Dock = DockStyle.Fill;
+            //sc.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
+            //txtUrlForPanel1.Dock = DockStyle.Top;
+            //sc.Panel1.Controls.Add(txtUrlForPanel1);
+            sc.Panel1.Controls.Add(chromeBrowser1);
+            splitContainer.Panel1.Controls.Add(sc);
+
+            sc.Panel1.Controls.Add(chromeBrowser1);
+            sc.Panel2.Controls.Add(chromeBrowser2);
+
+            splitContainer.Panel2.Controls.Add(chromeBrowser3);
         }
 
         private void TxtUrlForPanel1_Leave(object sender, EventArgs e)
@@ -88,6 +108,31 @@ namespace WebBrowser
         private void SplitContainer_Panel2_ClientSizeChanged(object sender, EventArgs e)
         {
             //txtUrlForPanel2.Left = splitContainer.Panel2.Left;
+        }
+
+        private void txtUrlForPanel3_Leave(object sender, EventArgs e)
+        {
+            ChangeUrl(sender, chromeBrowser3);
+        }
+
+        private void btnZoomIn_Click(object sender, EventArgs e)
+        {
+            zoom = zoom + zoomLevel;
+            chromeBrowser1.SetZoomLevel(zoom);
+            chromeBrowser2.SetZoomLevel(zoom);
+            chromeBrowser3.SetZoomLevel(zoom);
+        }
+
+        private void btnZoomOut_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                zoom = zoom - zoomLevel;
+                chromeBrowser1.SetZoomLevel(zoom);
+                chromeBrowser2.SetZoomLevel(zoom);
+                chromeBrowser3.SetZoomLevel(zoom);
+            }
+            catch { }
         }
     }
 }

@@ -100,6 +100,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GeneralTestWebSite", "Gener
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperClasses", "HelperClasses\HelperClasses.csproj", "{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{2C31E8EE-33B4-4E29-83A0-0179A451440C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -208,6 +210,10 @@ Global
 		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591512F2-5F53-4E9C-B5E5-7D920C8C24DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C31E8EE-33B4-4E29-83A0-0179A451440C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C31E8EE-33B4-4E29-83A0-0179A451440C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C31E8EE-33B4-4E29-83A0-0179A451440C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C31E8EE-33B4-4E29-83A0-0179A451440C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

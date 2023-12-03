@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="WebGrid.aspx.cs" Inherits="WebGrid" %>
 
-<%--<%@ Register Assembly="ISNet.WebUI.WebGrid" Namespace="ISNet.WebUI.WebGrid" TagPrefix="ISWebGrid" %>--%>
+<%@ Register Assembly="ISNet.WebUI.WebGrid" Namespace="ISNet.WebUI.WebGrid" TagPrefix="ISWebGrid" %>
 
 <!DOCTYPE html>
 
@@ -12,10 +12,10 @@
     <form id="form1" runat="server">
         <div>
 
-         <%--   <ISWebGrid:WebGrid ID="wgData" runat="server" Height="250px" UseDefaultStyle="true" Width="500px" AllowAutoDataCaching="true">
-            </ISWebGrid:WebGrid>--%>
+            <ISWebGrid:WebGrid ID="wgData" runat="server" Height="250px" UseDefaultStyle="true" Width="500px" AllowAutoDataCaching="true">
+            </ISWebGrid:WebGrid>
 
-         <%--   <ISWebGrid:WebGrid ID="wgTransactions" runat="server"
+            <ISWebGrid:WebGrid ID="wgTransactions" runat="server"
                 HorizontalAlign="NotSet" Width="100%" Height="600px"
                 OnInitializeDataSource="wgTransactions_InitializeDataSource"
 
@@ -84,7 +84,7 @@
                     <ClientSideEvents OnAfterResponseProcess="wgDoResize(true,true);" />
                 </LayoutSettings>
                 <FlyPostBackSettings PostInputControls="True" />
-            </ISWebGrid:WebGrid>--%>
+            </ISWebGrid:WebGrid>
 
         </div>
     </form>

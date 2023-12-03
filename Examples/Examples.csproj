@@ -26,4 +26,10 @@
     <ProjectReference Include="..\TimeOut\TimeOut.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="OpenPop">
+      <HintPath>..\..\Email\OpenPop.NET 2.0.5\binaries\signed (strong name)\OpenPop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

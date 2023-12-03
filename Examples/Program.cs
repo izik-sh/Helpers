@@ -3,6 +3,10 @@
 #region Culture
 using System.Globalization;
 
+#region Recieve Mail
+Email.GetMail();
+#endregion
+
 try
 {
     string datetimestring = "14/5/2023";
@@ -131,7 +135,7 @@ string formatedDate = DateTime.Now.GetMonthAndYearForamted("MM-yyyy");
 #endregion
 #endregion
 
-#region Email
+#region Send Email
 string from = "myEmail@gmail.com";
 string to = "izik.shtemer@gmail.com";
 string subject = "Hello mike";

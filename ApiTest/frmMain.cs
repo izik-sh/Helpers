@@ -154,6 +154,9 @@ namespace ApiTest
                             string rateFilePath = ConfigurationManager.AppSettings["RateFilePath"];
                             int rateFileEncoding = Convert.ToInt32(ConfigurationManager.AppSettings["rateFileEncoding"]);
                             File.WriteAllText(rateFilePath, sb.ToString(), Encoding.GetEncoding(rateFileEncoding));
+
+                            var content = File.ReadAllText(rateFilePath, Encoding.Default);
+                            string pause = "";
                             #endregion
                         }
                     }
@@ -180,7 +183,7 @@ namespace ApiTest
             DateTime date = (DateTime)rate.LastUpdate;
             string dateAsString = date.ToString("ddMMyyyyHHmmss");
 
-            string row = string.Format("01{0}{1}ILS{2}M{3}{4}{5}{6}{7}{8}{9}1", rate.Key, string.Empty.PadLeft(17), string.Empty.PadLeft(17), string.Empty.PadRight(14), dateAsString, string.Empty.PadRight(15), rate.CurrentExchangeRate.ToString().PadLeft(6), string.Empty.PadRight(24), rate.Unit.ToString().PadLeft(3), string.Empty.PadLeft(6));
+            string row = string.Format("01{0}{1}ILS{2}M{3}{4}{5}{6}{7}{8}{9}1", rate.Key, string.Empty.PadLeft(17), string.Empty.PadLeft(17), string.Empty.PadRight(14), dateAsString, string.Empty.PadRight(14), rate.CurrentExchangeRate.ToString().PadLeft(6), string.Empty.PadRight(24), rate.Unit.ToString().PadLeft(3), string.Empty.PadLeft(6));
             return row;
         }
 

@@ -160,7 +160,12 @@
       "ProjectGuid": "591512f2-5f53-4e9c-b5e5-7d920c8c24df",
       "DisplayName": "HelperClasses",
       "ColorIndex": 14
+    },
+    "2c31e8ee-33b4-4e29-83a0-0179a451440c": {
+      "ProjectGuid": "2c31e8ee-33b4-4e29-83a0-0179a451440c",
+      "DisplayName": "ConsoleApp",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 15
+  "NextColorIndex": 0
 }

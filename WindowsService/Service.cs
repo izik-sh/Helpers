@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Management;
 using System.ServiceProcess;
 using System.Text;
@@ -50,15 +53,91 @@ namespace WindowsService
 
         public void RunTasks(object sender, ElapsedEventArgs e)
         {
-            DataTable dt = DBHelper.GetDataTable("GetActiveGeneralEntites", null, null, true);
+            string[] param = new string[1] { "Identifier" };
+            object[] paramValue = new object[1] { HDUniqueIdentity };
+            DataTable dt = DBHelper.GetDataTable("GetActiveGeneralEntites", param, paramValue, true);
+            WriteEventLog(HDUniqueIdentity, EventLogEntryType.Warning);
 
+            BlockUrl(dt);
+
+            ComputerShutDown(dt);
+
+        }
+
+        private void BlockUrl(DataTable dt)
+        {
+            WriteEventLog("Start BlockUrl", EventLogEntryType.Information);
+            try
+            {
+                string hostsPath = @"C:\Windows\System32\drivers\etc\hosts";
+                string localIp = "127.0.0.1";
+                WriteEventLog("BlockUrl dt.rows=" + dt.Rows.Count.ToString(), EventLogEntryType.Information); ;
+
+                if (dt.Rows.Count > 0)
+                {
+
+                    string[] urls = dt.Rows[2]["entity_value"].ToString().Split(',');
+                    string[] times = dt.Rows[3]["entity_value"].ToString().Split(',');
+                    string[] startTime = times[0].Split(':');
+                    string[] endTime = times[1].Split(':');
+                    string[] hosts = File.ReadAllLines(hostsPath);
+                    List<string> hostsLines = hosts.ToList();
+                    string hostsFileTxt = File.ReadAllText(hostsPath);
+
+                    int startResults = TimeSpan.Compare(DateTime.Now.TimeOfDay, new TimeSpan(Convert.ToInt32(startTime[0]), Convert.ToInt32(startTime[1]), Convert.ToInt32(startTime[2])));
+                    int endResults = TimeSpan.Compare(new TimeSpan(Convert.ToInt32(endTime[0]), Convert.ToInt32(endTime[1]), Convert.ToInt32(endTime[2])), DateTime.Now.TimeOfDay);
+
+                    if (startResults == 1 && endResults == 1)
+                    {
+                        WriteEventLog("BlockUrl startResults=" + startResults.ToString() + " endResults=" + endResults.ToString(), EventLogEntryType.Information); ;
+
+                        foreach (string url in urls)
+                        {
+                            if (hostsFileTxt.Contains(localIp + " " + url))
+                            {
+                                hostsFileTxt.Replace("#" + localIp + " " + url, localIp + " " + url);
+                            }
+                            else
+                            {
+                                hostsFileTxt += Environment.NewLine + localIp + " " + url;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        foreach (string url in urls)
+                        {
+                            if (hostsFileTxt.Contains(localIp + " " + url))
+                            {
+                                hostsFileTxt = hostsFileTxt.Replace(localIp + " " + url, "");
+                            }
+                        }
+                    }
+                    File.WriteAllText(hostsPath, hostsFileTxt);
+                }
+            }
+            catch (Exception ex)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Message: " + ex.Message + Environment.NewLine);
+                sb.Append("StackTrace: " + ex.StackTrace + Environment.NewLine);
+                sb.Append("Source: " + ex.Source + Environment.NewLine);
+
+                WriteEventLog(sb.ToString());
+            }
+            WriteEventLog("End BlockUrl", EventLogEntryType.Information);
+
+        }
+
+        private void ComputerShutDown(DataTable dt)
+        {
             string[] startTime = timeToShutDown.Split(':');
             string[] endTime = startTime;
             int increaseHour = Convert.ToInt32(endTime[0]);
             increaseHour++;
             endTime[0] = increaseHour.ToString();
             string alertMessage = "המחשב יכבה בעוד 15 דקות";
-            MessageBox.Show(alertMessage);
+            //MessageBox.Show(alertMessage);
 
             try
             {
@@ -95,7 +174,7 @@ namespace WindowsService
 
             if (startResults == 1 && endResults == 1 && !daysToSkip.ToLower().Contains(DateTime.Now.DayOfWeek.ToString().ToLower()))
             {
-                ComputerShutDown.ShutDown();
+                WindowsService.ComputerShutDown.ShutDown();
             }
         }
 

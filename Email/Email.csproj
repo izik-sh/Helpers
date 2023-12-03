@@ -10,4 +10,10 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="OpenPop">
+      <HintPath>..\..\Email\OpenPop.NET 2.0.5\binaries\signed (strong name)\OpenPop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
