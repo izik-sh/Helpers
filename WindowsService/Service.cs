@@ -22,6 +22,12 @@ namespace WindowsService
         int timerIntervalInSeconds = 60000;
         string daysToSkip = DayOfWeek.Friday.ToString();
         string HDUniqueIdentity = string.Empty;
+
+        string action = "";
+        string[] startTime = null;
+        string[] endTime = null;
+        int increaseHour = 0;
+        string alertMessage = "המחשב יכבה בעוד 15 דקות";
         #endregion
 
         public Service()
@@ -49,6 +55,12 @@ namespace WindowsService
             T1.Enabled = true;
             T1.Start();
             T1.Elapsed += new System.Timers.ElapsedEventHandler(RunTasks);
+
+            startTime = timeToShutDown.Split(':');
+            endTime = startTime;
+            increaseHour = Convert.ToInt32(endTime[0]);
+            increaseHour++;
+            endTime[0] = increaseHour.ToString();
         }
 
         public void RunTasks(object sender, ElapsedEventArgs e)
@@ -58,10 +70,31 @@ namespace WindowsService
             DataTable dt = DBHelper.GetDataTable("GetActiveGeneralEntites", param, paramValue, true);
             WriteEventLog(HDUniqueIdentity, EventLogEntryType.Warning);
 
+            LockComputer(dt);
+
             BlockUrl(dt);
 
             ComputerShutDown(dt);
+        }
 
+        private void LockComputer(DataTable dt)
+        {
+            WriteEventLog("Start LockScreen", EventLogEntryType.Information);
+            try
+            {
+                action = System.Reflection.MethodBase.GetCurrentMethod().Name;
+                RunTaskByTime(dt, ref startTime, ref endTime, ref alertMessage, action);
+            }
+            catch (Exception ex)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("Message: " + ex.Message + Environment.NewLine);
+                sb.Append("StackTrace: " + ex.StackTrace + Environment.NewLine);
+                sb.Append("Source: " + ex.Source + Environment.NewLine);
+
+                WriteEventLog(sb.ToString());
+            }
+            WriteEventLog("End LockScreen", EventLogEntryType.Information);
         }
 
         private void BlockUrl(DataTable dt)
@@ -131,14 +164,13 @@ namespace WindowsService
 
         private void ComputerShutDown(DataTable dt)
         {
-            string[] startTime = timeToShutDown.Split(':');
-            string[] endTime = startTime;
-            int increaseHour = Convert.ToInt32(endTime[0]);
-            increaseHour++;
-            endTime[0] = increaseHour.ToString();
-            string alertMessage = "המחשב יכבה בעוד 15 דקות";
             //MessageBox.Show(alertMessage);
+            action = System.Reflection.MethodBase.GetCurrentMethod().Name;
+            RunTaskByTime(dt, ref startTime, ref endTime, ref alertMessage, action);
+        }
 
+        private void RunTaskByTime(DataTable dt, ref string[] startTime, ref string[] endTime, ref string alertMessage, string action)
+        {
             try
             {
                 if (dt.Rows.Count > 0)
@@ -174,7 +206,19 @@ namespace WindowsService
 
             if (startResults == 1 && endResults == 1 && !daysToSkip.ToLower().Contains(DateTime.Now.DayOfWeek.ToString().ToLower()))
             {
-                WindowsService.ComputerShutDown.ShutDown();
+                switch (action)
+                {
+                    case "ComputerShutDown":
+                        WindowsService.ComputerShutDown.ShutDown();
+                        break;
+                    case "LockComputer":
+                        LockScreen.LockWorkStation();
+                        break;
+                    default:
+                        // code block
+                        break;
+                }
+
             }
         }
 
