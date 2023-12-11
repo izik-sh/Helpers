@@ -28,6 +28,7 @@ namespace WindowsService
         string[] endTime = null;
         int increaseHour = 0;
         string alertMessage = "המחשב יכבה בעוד 15 דקות";
+        DataTable dt;
         #endregion
 
         public Service()
@@ -41,8 +42,11 @@ namespace WindowsService
             timeToShutDown = ConfigurationManager.AppSettings["TimeToShutDown"] != null ? ConfigurationManager.AppSettings["TimeToShutDown"] : timeToShutDown;
             timerIntervalInSeconds = ConfigurationManager.AppSettings["TimerIntervalInSeconds"] != null ? Convert.ToInt32(ConfigurationManager.AppSettings["TimerIntervalInSeconds"]) * 1000 : timerIntervalInSeconds;
             daysToSkip = ConfigurationManager.AppSettings["DaysToSkip"] ?? daysToSkip;
-
+ 
             HDUniqueIdentity = Utilities.Utilities.GetHDUniqueIdentity();
+            string[] param = new string[1] { "Identifier" };
+            object[] paramValue = new object[1] { HDUniqueIdentity };
+             dt = DBHelper.GetDataTable("GetActiveGeneralEntites", param, paramValue, true);
         }
 
         protected override void OnStart(string[] args)
@@ -65,9 +69,7 @@ namespace WindowsService
 
         public void RunTasks(object sender, ElapsedEventArgs e)
         {
-            string[] param = new string[1] { "Identifier" };
-            object[] paramValue = new object[1] { HDUniqueIdentity };
-            DataTable dt = DBHelper.GetDataTable("GetActiveGeneralEntites", param, paramValue, true);
+
             WriteEventLog(HDUniqueIdentity, EventLogEntryType.Warning);
 
             LockComputer(dt);
@@ -218,7 +220,6 @@ namespace WindowsService
                         // code block
                         break;
                 }
-
             }
         }
 
