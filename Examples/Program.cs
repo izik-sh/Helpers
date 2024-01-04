@@ -1,12 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
-#region Culture
 using System.Globalization;
+
+A aa = new C();
+
+var sq = new Square(12);
+Console.WriteLine($"Area of the square = {sq.GetArea()}");
+var volvo = new Volvo(5, "sami");
+Console.WriteLine($"Area of the volvo = {volvo.GetArea()}");
+string name = volvo.Name;
+
+Person p = new Person();
+Console.WriteLine(p.Id);
+return;
 
 #region Recieve Mail
 Email.GetMail();
 #endregion
 
+#region Culture
 try
 {
     string datetimestring = "14/5/2023";
@@ -59,7 +70,6 @@ catch (Exception ex)
 }
 #endregion
 
-return;
 
 #region Get HTML Content
 string urlToRead = "https://ethos.smarticket.co.il/iframe/רוקולנוע_לייב_%7C_להקת_הכבשים-_מופע_מחווה_ל_כבש_ה16_?id=21776";

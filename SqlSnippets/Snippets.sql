@@ -97,8 +97,8 @@ BEGIN -- Delete duplicated rows
 END
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 BEGIN -- Dynamic PIVOT
-ECLARE @cols AS NVARCHAR(MAX),
-    @query  AS NVARCHAR(MAX)
+DECLARE @cols AS NVARCHAR(MAX),
+        @query  AS NVARCHAR(MAX)
 
 select @cols = STUFF((SELECT distinct ',' + QUOTENAME(AssignmentName) 
                     from yourtable
@@ -119,8 +119,17 @@ set @query = 'SELECT StudentName, ' + @cols + ' from
 
 execute(@query)
 END
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+BEGIN -- Count with join
 
-
+SELECT COUNT(*) TotalCount, 
+        category.category_id, 
+        category.category_name 
+FROM    [izik-sh_pDB].[dbo].d_catagories_to_song cts
+        INNER JOIN [d_categories] category
+          ON cts.category_id = category.category_id 
+GROUP BY category.category_id, category.category_name
+END
 
 
 
