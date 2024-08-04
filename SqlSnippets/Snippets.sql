@@ -131,6 +131,18 @@ FROM    [izik-sh_pDB].[dbo].d_catagories_to_song cts
 GROUP BY category.category_id, category.category_name
 END
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+BEGIN -- Data compare
 
+SELECT * FROM t_MD_BH_RULES
+UNION 
+SELECT * FROM t_MD_BH_RULES_COMPARE
+EXCEPT 
+SELECT * FROM t_MD_BH_RULES
+INTERSECT
+SELECT * FROM t_MD_BH_RULES_COMPARE;
+END
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 */

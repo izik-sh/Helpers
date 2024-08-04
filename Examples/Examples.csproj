@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Email\Email.csproj" />
     <ProjectReference Include="..\ExtensionMethods\ExtensionMethods.csproj" />
+    <ProjectReference Include="..\HelperClasses\HelperClasses.csproj" />
     <ProjectReference Include="..\HtmlHelper\HtmlHelper.csproj" />
     <ProjectReference Include="..\PostJson\PostJson.csproj" />
     <ProjectReference Include="..\TimeOutFramwork4.0\TimeOutFramwork4.0.csproj" />

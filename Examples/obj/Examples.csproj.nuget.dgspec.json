@@ -104,6 +104,9 @@
               "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
                 "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
               },
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj"
+              },
               "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {
                 "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj"
               },
@@ -234,6 +237,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj",
+        "projectName": "HelperClasses",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     },
     "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {

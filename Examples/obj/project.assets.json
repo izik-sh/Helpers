@@ -387,6 +387,15 @@
           "bin/placeholder/ExtensionMethods.dll": {}
         }
       },
+      "HelperClasses/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/HelperClasses.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelperClasses.dll": {}
+        }
+      },
       "HtmlHelper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1343,6 +1352,11 @@
       "path": "../ExtensionMethods/ExtensionMethods.csproj",
       "msbuildProject": "../ExtensionMethods/ExtensionMethods.csproj"
     },
+    "HelperClasses/1.0.0": {
+      "type": "project",
+      "path": "../HelperClasses/HelperClasses.csproj",
+      "msbuildProject": "../HelperClasses/HelperClasses.csproj"
+    },
     "HtmlHelper/1.0.0": {
       "type": "project",
       "path": "../HtmlHelper/HtmlHelper.csproj",
@@ -1370,6 +1384,7 @@
       "EnterpriseLibrary.Common >= 6.0.1304",
       "EnterpriseLibrary.Logging >= 6.0.1304",
       "ExtensionMethods >= 1.0.0",
+      "HelperClasses >= 1.0.0",
       "HtmlHelper >= 1.0.0",
       "Microsoft.Extensions.Configuration.Abstractions >= 6.0.0",
       "PostJson >= 1.0.0",
@@ -1419,6 +1434,9 @@
             },
             "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
               "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
+            },
+            "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj": {
+              "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj"
             },
             "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {
               "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj"

@@ -156,3 +156,5 @@ C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HtmlHelper.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HtmlHelper.pdb
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\OpenPop.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HelperClasses.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HelperClasses.pdb

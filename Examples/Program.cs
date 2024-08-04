@@ -1,6 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using HelperClasses;
 using System.Globalization;
 
+#region Excel
+ExcelHelper.RunTest();
+#endregion
+return;
+
+#region inherit
 A aa = new C();
 
 var sq = new Square(12);
@@ -11,7 +18,7 @@ string name = volvo.Name;
 
 Person p = new Person();
 Console.WriteLine(p.Id);
-return;
+#endregion
 
 #region Recieve Mail
 Email.GetMail();
@@ -69,7 +76,6 @@ catch (Exception ex)
 
 }
 #endregion
-
 
 #region Get HTML Content
 string urlToRead = "https://ethos.smarticket.co.il/iframe/רוקולנוע_לייב_%7C_להקת_הכבשים-_מופע_מחווה_ל_כבש_ה16_?id=21776";
