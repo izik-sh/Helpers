@@ -165,7 +165,12 @@
       "ProjectGuid": "2c31e8ee-33b4-4e29-83a0-0179a451440c",
       "DisplayName": "ConsoleApp",
       "ColorIndex": 15
+    },
+    "9c8382d4-0565-4a87-9bd2-e27ef013acfc": {
+      "ProjectGuid": "9c8382d4-0565-4a87-9bd2-e27ef013acfc",
+      "DisplayName": "Winforms",
+      "ColorIndex": 0
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 1
 }

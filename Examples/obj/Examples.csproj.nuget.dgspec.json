@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -56,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -104,11 +110,11 @@
               "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj": {
                 "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\ExtensionMethods\\ExtensionMethods.csproj"
               },
+              "C:\\Users\\iziks\\source\\repos\\Helpers\\GetJson\\GetJson.csproj": {
+                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\GetJson\\GetJson.csproj"
+              },
               "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj": {
                 "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj"
-              },
-              "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {
-                "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj"
               },
               "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
                 "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj"
@@ -126,6 +132,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -167,7 +178,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -176,7 +188,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -215,6 +227,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -226,7 +243,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -235,33 +253,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj",
-        "projectName": "HelperClasses",
-        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj",
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net48": {}
-      }
-    },
-    "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj": {
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\GetJson\\GetJson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj",
-        "projectName": "HtmlHelper",
-        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\HtmlHelper.csproj",
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\GetJson\\GetJson.csproj",
+        "projectName": "GetJson",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\GetJson\\GetJson.csproj",
         "packagesPath": "C:\\Users\\iziks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HtmlHelper\\obj\\",
+        "outputPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\GetJson\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -289,18 +292,30 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -309,8 +324,23 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj",
+        "projectName": "HelperClasses",
+        "projectPath": "C:\\Users\\iziks\\source\\repos\\Helpers\\HelperClasses\\HelperClasses.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     },
     "C:\\Users\\iziks\\source\\repos\\Helpers\\PostJson\\PostJson.csproj": {
@@ -348,6 +378,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -365,7 +400,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -374,7 +410,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -413,6 +449,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -424,7 +465,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -433,7 +475,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -472,6 +514,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -483,7 +530,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -492,7 +540,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

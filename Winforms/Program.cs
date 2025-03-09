@@ -16,7 +16,8 @@ namespace Winforms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFreeze());
+            //Application.Run(new frmFreeze());
+            Application.Run(new frmReadDocuments());
         }
     }
 }

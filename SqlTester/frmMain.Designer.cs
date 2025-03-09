@@ -46,49 +46,44 @@
             // lblDataSource
             // 
             this.lblDataSource.AutoSize = true;
-            this.lblDataSource.Location = new System.Drawing.Point(18, 20);
-            this.lblDataSource.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDataSource.Location = new System.Drawing.Point(12, 13);
             this.lblDataSource.Name = "lblDataSource";
-            this.lblDataSource.Size = new System.Drawing.Size(99, 20);
+            this.lblDataSource.Size = new System.Drawing.Size(67, 13);
             this.lblDataSource.TabIndex = 0;
             this.lblDataSource.Text = "Data Source";
             // 
             // lblInitialCatalog
             // 
             this.lblInitialCatalog.AutoSize = true;
-            this.lblInitialCatalog.Location = new System.Drawing.Point(18, 60);
-            this.lblInitialCatalog.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInitialCatalog.Location = new System.Drawing.Point(12, 39);
             this.lblInitialCatalog.Name = "lblInitialCatalog";
-            this.lblInitialCatalog.Size = new System.Drawing.Size(105, 20);
+            this.lblInitialCatalog.Size = new System.Drawing.Size(70, 13);
             this.lblInitialCatalog.TabIndex = 0;
             this.lblInitialCatalog.Text = "Initial Catalog";
             // 
             // lblUserId
             // 
             this.lblUserId.AutoSize = true;
-            this.lblUserId.Location = new System.Drawing.Point(20, 100);
-            this.lblUserId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserId.Location = new System.Drawing.Point(13, 65);
             this.lblUserId.Name = "lblUserId";
-            this.lblUserId.Size = new System.Drawing.Size(61, 20);
+            this.lblUserId.Size = new System.Drawing.Size(41, 13);
             this.lblUserId.TabIndex = 0;
             this.lblUserId.Text = "User Id";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(18, 138);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(12, 90);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(78, 20);
+            this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 0;
             this.lblPassword.Text = "Password";
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(24, 214);
-            this.btnRun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRun.Location = new System.Drawing.Point(16, 139);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(100, 38);
+            this.btnRun.Size = new System.Drawing.Size(67, 25);
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "Run Query";
             this.btnRun.UseVisualStyleBackColor = true;
@@ -98,41 +93,41 @@
             // 
             this.txtDataSource.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDataSource.Location = new System.Drawing.Point(156, 20);
-            this.txtDataSource.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDataSource.Location = new System.Drawing.Point(104, 13);
             this.txtDataSource.Name = "txtDataSource";
-            this.txtDataSource.Size = new System.Drawing.Size(949, 26);
+            this.txtDataSource.Size = new System.Drawing.Size(634, 20);
             this.txtDataSource.TabIndex = 2;
+            this.txtDataSource.Text = "mssql30.1host.co.il";
             // 
             // txtInitialCatalog
             // 
             this.txtInitialCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInitialCatalog.Location = new System.Drawing.Point(156, 60);
-            this.txtInitialCatalog.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtInitialCatalog.Location = new System.Drawing.Point(104, 39);
             this.txtInitialCatalog.Name = "txtInitialCatalog";
-            this.txtInitialCatalog.Size = new System.Drawing.Size(949, 26);
+            this.txtInitialCatalog.Size = new System.Drawing.Size(634, 20);
             this.txtInitialCatalog.TabIndex = 2;
+            this.txtInitialCatalog.Text = "izik-sh_pDB";
             // 
             // txtUserId
             // 
             this.txtUserId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUserId.Location = new System.Drawing.Point(156, 100);
-            this.txtUserId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUserId.Location = new System.Drawing.Point(104, 65);
             this.txtUserId.Name = "txtUserId";
-            this.txtUserId.Size = new System.Drawing.Size(949, 26);
+            this.txtUserId.Size = new System.Drawing.Size(634, 20);
             this.txtUserId.TabIndex = 2;
+            this.txtUserId.Text = "izik-sh_dbadmin";
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(156, 138);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(104, 90);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(949, 26);
+            this.txtPassword.Size = new System.Drawing.Size(634, 20);
             this.txtPassword.TabIndex = 2;
+            this.txtPassword.Text = "opendoor";
             // 
             // gvData
             // 
@@ -142,21 +137,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvData.Location = new System.Drawing.Point(22, 283);
-            this.gvData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gvData.Location = new System.Drawing.Point(15, 184);
             this.gvData.Name = "gvData";
             this.gvData.ReadOnly = true;
             this.gvData.RowHeadersWidth = 62;
-            this.gvData.Size = new System.Drawing.Size(1083, 135);
+            this.gvData.Size = new System.Drawing.Size(722, 88);
             this.gvData.TabIndex = 3;
             // 
             // lblQuery
             // 
             this.lblQuery.AutoSize = true;
-            this.lblQuery.Location = new System.Drawing.Point(20, 178);
-            this.lblQuery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblQuery.Location = new System.Drawing.Point(13, 116);
             this.lblQuery.Name = "lblQuery";
-            this.lblQuery.Size = new System.Drawing.Size(51, 20);
+            this.lblQuery.Size = new System.Drawing.Size(35, 13);
             this.lblQuery.TabIndex = 0;
             this.lblQuery.Text = "Query";
             // 
@@ -164,18 +157,18 @@
             // 
             this.txtQuery.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtQuery.Location = new System.Drawing.Point(156, 178);
-            this.txtQuery.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtQuery.Location = new System.Drawing.Point(104, 116);
             this.txtQuery.Multiline = true;
             this.txtQuery.Name = "txtQuery";
-            this.txtQuery.Size = new System.Drawing.Size(949, 74);
+            this.txtQuery.Size = new System.Drawing.Size(634, 50);
             this.txtQuery.TabIndex = 2;
+            this.txtQuery.Text = "select * from sys.databases";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 432);
+            this.ClientSize = new System.Drawing.Size(750, 281);
             this.Controls.Add(this.gvData);
             this.Controls.Add(this.txtQuery);
             this.Controls.Add(this.txtPassword);
@@ -188,7 +181,6 @@
             this.Controls.Add(this.lblUserId);
             this.Controls.Add(this.lblInitialCatalog);
             this.Controls.Add(this.lblDataSource);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
             this.Text = "Sql Tester";
             ((System.ComponentModel.ISupportInitialize)(this.gvData)).EndInit();

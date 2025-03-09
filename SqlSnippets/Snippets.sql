@@ -144,5 +144,76 @@ SELECT * FROM t_MD_BH_RULES_COMPARE;
 END
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
+BEGIN -- Delete all stored procedure
 
+declare @procName varchar(500)
+declare cur cursor 
+
+for select [name] from sys.objects where type = 'p'
+open cur
+fetch next from cur into @procName
+while @@fetch_status = 0
+begin
+    exec('drop function [' + @procName + ']')
+    fetch next from cur into @procName
+end
+close cur
+deallocate cur
+END
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+BEGIN -- Delete all functions
+
+Declare @sql NVARCHAR(MAX) = N'';
+
+SELECT @sql = @sql + N' DROP FUNCTION ' 
+                   + QUOTENAME(SCHEMA_NAME(schema_id)) 
+                   + N'.' + QUOTENAME(name)
+FROM sys.objects
+WHERE type_desc LIKE '%FUNCTION%';
+
+Exec sp_executesql @sql
+END
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+BEGIN -- Compare 2 tables schema
+
+-- Replace 'your_table_1' and 'your_table_2' with your table names
+
+-- Compare columns in Table 1 and Table 2
+SELECT
+    'Table1 vs Table2' AS ComparisonType,
+    t1.name AS ColumnNameT1,
+	 t2.name AS ColumnNameT2,
+    t1.type AS DataType_Table1,
+    t2.type AS DataType_Table2,
+    t1.is_nullable AS IsNullable_Table1,
+    t2.is_nullable AS IsNullable_Table2,
+    t1.column_id AS ColumnID_Table1,
+    t2.column_id AS ColumnID_Table2,
+    CASE 
+        WHEN t1.name IS NULL THEN 'Column is in Table 2 but not in Table 1'
+        WHEN t2.name IS NULL THEN 'Column is in Table 1 but not in Table 2'
+        WHEN t1.type <> t2.type THEN 'Data type mismatch'
+        WHEN t1.is_nullable <> t2.is_nullable THEN 'Nullability mismatch'
+        ELSE 'No difference'
+    END AS DifferenceType
+FROM
+    -- Columns in Table 1
+    (SELECT c.name, ty.name AS type, c.is_nullable, c.column_id
+     FROM sys.columns c
+     JOIN sys.types ty ON c.user_type_id = ty.user_type_id
+     WHERE c.object_id = OBJECT_ID('t_MD_Currency')) t1
+FULL OUTER JOIN
+    -- Columns in Table 2
+    (SELECT c.name, ty.name AS type, c.is_nullable, c.column_id
+     FROM sys.columns c
+     JOIN sys.types ty ON c.user_type_id = ty.user_type_id
+     WHERE c.object_id = OBJECT_ID('t_MD_Currency_Test')) t2
+ON t1.name = t2.name
+ORDER BY ColumnNameT1;
+
+END
 */

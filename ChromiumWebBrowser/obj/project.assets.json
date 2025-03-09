@@ -123,7 +123,9 @@
           "ref/netcoreapp3.1/CefSharp.WinForms.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.1/CefSharp.WinForms.dll": {}
+          "lib/netcoreapp3.1/CefSharp.WinForms.dll": {
+            "related": ".xml"
+          }
         }
       },
       "chromiumembeddedframework.runtime/97.1.6": {
@@ -676,7 +678,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -693,6 +695,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -722,7 +729,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -734,8 +742,20 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CefSharp.WinForms.NETCore' 97.1.61 has a known high severity vulnerability, https://github.com/advisories/GHSA-vv6j-ww6x-54gx",
+      "libraryId": "CefSharp.WinForms.NETCore",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

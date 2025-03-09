@@ -2,10 +2,18 @@
 using HelperClasses;
 using System.Globalization;
 
+string framwork = FramwrorkHelper.GetFramwrork();
+return;
+
+
+#region Json
+GetJson getJson = new GetJson();
+var obj = getJson.GetJsonExample();
+#endregion
+
 #region Excel
 ExcelHelper.RunTest();
 #endregion
-return;
 
 #region inherit
 A aa = new C();
@@ -21,7 +29,7 @@ Console.WriteLine(p.Id);
 #endregion
 
 #region Recieve Mail
-Email.GetMail();
+//Email.GetMail();
 #endregion
 
 #region Culture

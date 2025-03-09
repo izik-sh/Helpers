@@ -4,6 +4,8 @@ namespace WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [ApiExplorerSettings(IgnoreApi = true)]  // Hide the entire controller
+
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -18,7 +20,7 @@ namespace WebApi.Controllers
             _logger = logger;
         }
 
-        [HttpPost(Name = "izik")]
+        //[HttpPost(Name = "izik")]
         [HttpGet(Name = "load")]
         [ActionName("SelectAll")]
 
@@ -31,6 +33,12 @@ namespace WebApi.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpPost]
+        public string Post()
+        {
+            return "hello world";
         }
 
         //[HttpGet("{id}")]

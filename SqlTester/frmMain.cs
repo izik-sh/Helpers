@@ -29,9 +29,9 @@ namespace SqlTester
                 txtInitialCatalog.Text = lines[1];
                 txtUserId.Text = lines[2];
                 txtPassword.Text = lines[3];
-                txtQuery.Text = lines[4].Replace("___NEW_LINE___",Environment.NewLine);
+                txtQuery.Text = lines[4].Replace("___NEW_LINE___", Environment.NewLine);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -45,6 +45,19 @@ namespace SqlTester
 
                 string connectionString = String.Format("Data Source={0};Initial Catalog={1};User Id={2};Password={3}", txtDataSource.Text, txtInitialCatalog.Text, txtUserId.Text, txtPassword.Text);
                 DataTable dt = DBHelper.GetDataTable(txtQuery.Text, null, null, false, connectionString);
+
+                int c = 0;
+                foreach (DataColumn col in dt.Columns)
+                {
+
+                    var type = col.DataType;
+                    if (type == typeof(System.Byte[]))
+                    {
+                        break;
+                    }
+                    c++;
+                }
+                dt.Columns.RemoveAt(c);
                 gvData.DataSource = dt;
             }
             catch (Exception ex)
@@ -55,7 +68,7 @@ namespace SqlTester
 
         private void SaveParams()
         {
-            string[] lines = { txtDataSource.Text, txtInitialCatalog.Text, txtUserId.Text, txtPassword.Text, txtQuery.Text.Replace(Environment.NewLine,"___NEW_LINE___") };
+            string[] lines = { txtDataSource.Text, txtInitialCatalog.Text, txtUserId.Text, txtPassword.Text, txtQuery.Text.Replace(Environment.NewLine, "___NEW_LINE___") };
             System.IO.File.WriteAllLines(filePath, lines);
         }
     }

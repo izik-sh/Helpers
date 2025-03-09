@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="CSVHelper.cs" />
     <Compile Include="ExcelHelper.cs" />
+    <Compile Include="FramwrorkHelper.cs" />
+    <Compile Include="HtmlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

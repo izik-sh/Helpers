@@ -24,7 +24,6 @@ C:\Users\iziks\Source\Repos\izik-sh\Helpers\Email\obj\Debug\net6.0\ref\Email.dll
 C:\Users\iziks\Source\Repos\izik-sh\Helpers\Email\obj\Debug\net6.0\Email.pdb
 C:\Users\iziks\source\repos\Helpers\Email\bin\Debug\net6.0\Email.deps.json
 C:\Users\iziks\source\repos\Helpers\Email\bin\Debug\net6.0\Email.dll
-C:\Users\iziks\source\repos\Helpers\Email\bin\Debug\net6.0\ref\Email.dll
 C:\Users\iziks\source\repos\Helpers\Email\bin\Debug\net6.0\Email.pdb
 C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.csproj.AssemblyReference.cache
 C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,5 +33,5 @@ C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.csproj.CoreComp
 C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.dll
 C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\ref\Email.dll
 C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.pdb
-C:\Users\iziks\source\repos\Helpers\Email\bin\Debug\net6.0\OpenPop.dll
-C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.csproj.CopyComplete
+C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\Email.sourcelink.json
+C:\Users\iziks\source\repos\Helpers\Email\obj\Debug\net6.0\refint\Email.dll

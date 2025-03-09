@@ -16,10 +16,10 @@ public partial class FileUpload : System.Web.UI.Page
 
     protected void btnUpload_Click(object sender, EventArgs e)
     {
-        var reader = new StreamReader(fileUpload.PostedFile.InputStream)
-        {
+        //var reader = new StreamReader(fileUpload.PostedFile.InputStream)
+        //{
 
-        }.ReadToEnd();
+        //}.ReadToEnd();
 
         //Create a DataTable.
         //DataTable dt = CSVHelper.CSVHelper.ConvertCSVtoDataTable(new StreamReader(fileUpload.PostedFile.InputStream));

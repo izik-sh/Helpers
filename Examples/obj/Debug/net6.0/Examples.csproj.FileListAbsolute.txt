@@ -105,7 +105,6 @@ C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Examples.dll.confi
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Examples.deps.json
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Examples.runtimeconfig.json
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Examples.dll
-C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\ref\Examples.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Examples.pdb
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\Newtonsoft.Json.dll
@@ -140,7 +139,6 @@ C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.Generated
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.AssemblyInfoInputs.cache
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.AssemblyInfo.cs
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.csproj.CoreCompileInputs.cache
-C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.csproj.CopyComplete
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.dll
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\ref\Examples.dll
 C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.pdb
@@ -153,8 +151,10 @@ C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOut.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOut.pdb
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\TimeOutFramwork4.0.pdb
-C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HtmlHelper.dll
-C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HtmlHelper.pdb
-C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\OpenPop.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HelperClasses.dll
 C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\HelperClasses.pdb
+C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.sourcelink.json
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\GetJson.dll
+C:\Users\iziks\source\repos\Helpers\Examples\bin\Debug\net6.0\GetJson.pdb
+C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\Examples.csproj.Up2Date
+C:\Users\iziks\source\repos\Helpers\Examples\obj\Debug\net6.0\refint\Examples.dll
